@@ -1,0 +1,235 @@
+a {
+  text-decoration: none;
+}
+.w {
+  width: 1903px;
+  margin: 0 auto;
+}
+.z-header {
+  height: 70px;
+  background-color: #2a2a2a;
+}
+.z-header .logo {
+  position: relative;
+  margin: 0 auto;
+  width: 1300px;
+}
+.z-header .logo a {
+  background: url(../z-images/logo1.png) no-repeat;
+  width: 180px;
+  height: 48px;
+  position: absolute;
+  top: 10px;
+  left: 180px;
+  cursor: pointer;
+  color: transparent;
+  user-select: none;
+}
+.load {
+  overflow: hidden;
+}
+.load .w {
+  position: relative;
+  height: 990px;
+  background: url(../z-upload/bg-bomb.jpg) no-repeat;
+}
+.load .w .action {
+  animation: solider 0.6s 1 forwards;
+}
+.load .w .solider {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -547px;
+  margin-left: -636px;
+  transform-origin: center bottom;
+  animation: solider 0.6s 1 forwards;
+}
+.load .w .t-logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -355px;
+  margin-left: -75px;
+  transform-origin: right center;
+  animation: solider 0.6s 1 forwards;
+}
+.load .w .qr {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -97px;
+  margin-left: -66px;
+  width: 248px;
+  height: 248px;
+  transform-origin: right center;
+  animation: qr 0.6s 1 forwards;
+}
+.load .w .android {
+  margin-top: -90px;
+  background: url(../z-images/bj-android.png) no-repeat;
+  transform-origin: right center;
+  animation: qr 0.6s 1 forwards;
+}
+.load .w .ios {
+  margin-top: 35px;
+  background: url(../z-images/bj-ios.png) no-repeat;
+  transform-origin: right center;
+  animation: qr 0.6s 1 forwards;
+}
+.load .w .download {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: 195px;
+  width: 318px;
+  height: 112px;
+  cursor: pointer;
+}
+@keyframes solider {
+  0% {
+    transform: scale(0.87);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes qr {
+  0% {
+    transform: translateX(90px) scale(0.9);
+  }
+  90% {
+    transform: translateX(3px) scale(1);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+.weal .w {
+  position: relative;
+  height: 885px;
+  margin-top: -68px;
+  background: url(../z-upload/bg-black.png) no-repeat;
+}
+.weal .w .s-weal {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  margin-left: -505.5px;
+}
+.weal .w .app-pic {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -275px;
+  margin-left: -542px;
+  transform-origin: right center;
+}
+@keyframes weal {
+  0% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: translateX(200px) scale(1);
+  }
+}
+@keyframes app {
+  0% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: translateX(-100px) scale(1);
+  }
+}
+.assist {
+  position: relative;
+  height: 1165px;
+  margin-top: -255px;
+}
+.assist .w {
+  height: 1165px;
+  background: url(../z-upload/bg-women.png) no-repeat;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  margin-left: -960px;
+}
+.assist .w .game {
+  position: absolute;
+  left: 50%;
+  margin-top: 262px;
+  margin-left: -483px;
+}
+.assist .w .list {
+  display: flex;
+  width: 54.164667%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 600px auto 0;
+}
+.assist .w li img {
+  opacity: 0;
+  transform-origin: center bottom;
+}
+.assist .w .bb {
+  position: absolute;
+  bottom: -75px;
+  left: 160px;
+}
+@keyframes lis {
+  100% {
+    opacity: 1;
+    transform: translateY(-160px);
+  }
+}
+.z-footer {
+  height: 150px;
+  background-color: #131313;
+}
+.z-footer .w-footer {
+  width: 1240px;
+  margin: 0 auto;
+  padding: 50px 0 0;
+}
+.z-footer .w-footer p {
+  text-align: center;
+  line-height: 24px;
+  font-size: 12px;
+  margin: 0;
+}
+.z-footer .w-footer p a {
+  color: #6e6e6e;
+}
+.z-footer .w-footer p a i {
+  padding: 0 4px;
+}
+.z-adv {
+  position: fixed;
+  right: 100px;
+  top: 150px;
+  width: 160px;
+  height: 340px;
+  display: block;
+  background: url(../z-upload/jion.png) no-repeat;
+  cursor: pointer;
+}
+.z-adv .a-jion {
+  width: 140px;
+  height: 45px;
+  position: absolute;
+  bottom: 62px;
+  left: 50%;
+  margin-left: -70px;
+  color: transparent;
+  user-select: none;
+}
+.z-adv .close {
+  position: absolute;
+  right: -6px;
+  top: -6px;
+  width: 20px;
+  height: 20px;
+  background: url(../z-images/close.png) no-repeat;
+  display: block;
+  cursor: pointer;
+}

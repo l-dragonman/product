@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>老兵空降回归-绝地求生官方网站-腾讯游戏</title>
+    <meta name="description" content="绝地求生官方是游戏官方指定的手机助手，全网最快最准的游戏数据，详细个人单场作战记录，首发绝地求生资讯，还有地图工具、武器资料库和热门游戏话题社区一手掌握！">
+    <meta name="keywords" content="腾讯吃鸡,绝地求生,吃鸡游戏,移动吃鸡APP,吃鸡APP,绝地求生下载,吃鸡游戏下载,吃鸡手游,绝地求生,绝地求生官方">
+    <link rel="shortcut icon" href="./favicon.ico">
+    <link rel="stylesheet" href="./z-css/base.css">
+    <link rel="stylesheet" href="./z-css/veteran.css">
+    <link rel="stylesheet" href="./z-css/l-commen.css">
+    <script src="./z-js/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- 头部 start -->
+    <section class="shortcut">
+        <div class="toubu-w">
+            <ul class="shortcut_w">
+                <li class="tx_games">
+                    <a href="" target="_blank" class="tx_game" title="腾讯游戏logo">腾讯游戏logo</a>
+                </li>
+                <li class="activity">
+                    <img src="./l-uploads/1c3aa1514f220e655c62b24dcd91921e.jpg" alt="">
+                </li>
+                <li class="shortcut_info">
+                    <h3 class="czsh">
+                        <a href="#">成长守护平台</a>
+                    </h3>
+                    <h3 class="hotlist">
+                        <a href="#" class="hotlist_open">腾讯游戏排行榜</a>
+                    </h3>
+                </li>
+            </ul>
+            <div class="big_activity">
+                <a href="#" target="_blank">
+                    <img src="./l-uploads/b7b13d336a11e200670d40976997e350.jpg" class="big_activity_co" alt="">
+                </a>
+            </div>
+            <div class="ost-rank">
+                <!-- new game -->
+                <div class="ost-rank-col">
+                    <h2 class="rank-title"><a rel="noopener" href="#" target="_blank" class="rank-more">新品端游排行榜</a>
+                    </h2>
+                    <ul class="rank-list" id="rankList_1">
+                        <li class="rank-item ">
+                            <p class="game-name">穿越火线</p>
+                            <img src="./l-uploads/20201228154024-344816.jpg" alt="" class="rank-img1 rank-img">
+                            <div class="rank-btn-bar">
+                                <a href="#" rel="noopener" target="_blank" class="rank-btn">进入官网</a> <a href="#"
+                                    rel="noopener" target="_blank" class="rank-btn">下载游戏</a>
+                            </div>
+                            <span class=" rank-order rank-order1">1</span>
+                        </li>
+                        <li class="rank-item ">
+                            <p class="game-name1">英雄联盟LOL</p> <img src="./l-uploads/20210104171412-491756.jpg" alt=""
+                                class="rank-img">
+                            <div class="rank-btn-bar">
+                                <a href="#" rel="noopener" target="_blank" class="rank-btn">进入官网</a> <a href="#"
+                                    rel="noopener" target="_blank" class="rank-btn">下载游戏</a>
+                            </div>
+                            <span class=" rank-order rank-order1">2</span>
+                        </li>
+                        <li class="rank-item rank-active">
+                            <p class="game-name">地下城与勇士</p> <img src="./l-uploads/20201228153940-638628.jpg" alt=""
+                                class="rank-img">
+                            <div class="rank-btn-bar">
+                                <a href="#" rel="noopener" target="_blank" class="rank-btn">进入官网</a> <a href="#"
+                                    rel="noopener" target="_blank" class="rank-btn">下载游戏</a>
+                            </div>
+                            <span class=" rank-order rank-order1">3</span>
+                        </li>
+                        <li class="rank-item ">
+                            <p class="game-name">FIFA Online 4</p> <img src="./l-uploads/20201229112103-127467.jpg"
+                                alt="" class="rank-img">
+                            <div class="rank-btn-bar">
+                                <a href="#" rel="noopener" target="_blank" class="rank-btn">进入官网</a> <a href="#"
+                                    rel="noopener" target="_blank" class="rank-btn">下载游戏</a>
+                            </div>
+                            <span class="rank-order">4</span>
+                        </li>
+                        <li class="rank-item ">
+                            <p class="game-name">NBA2K Online2</p> <img src="./l-uploads/20201228165353-132810.jpg"
+                                alt="" class="rank-img">
+                            <div class="rank-btn-bar">
+                                <a href="#" rel="noopener" target="_blank" class="rank-btn">进入官网</a> <a href="#"
+                                    rel="noopener" target="_blank" class="rank-btn">下载游戏</a>
+                            </div>
+                            <span class="rank-order">5</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- hot game -->
+                <div class="ost-rank-col">
+                    <h2 class="rank-title">
+                        <a rel="noopener" href="#" target="_blank" class="rank-more">热门端游排行榜</a>
+                    </h2>
+                    <ul class="rank-list" id="rankList_2">
+                        <li class="rank-item1 ">
+                            <p class="game-name">穿越火线</p>
+                            <img src="./l-uploads/20201228154024-344816.jpg" alt="" class="rank-img rank-img1">
+                            <div class="rank-btn-bar">
+                                <a href="#" rel="noopener" target="_blank" class="rank-btn">进入官网</a>
+                                <a href="#" rel="noopener" target="_blank" class="rank-btn">下载游戏</a>
+                            </div>
+                            <span class="rank-order1 rank-order">1</span>
+                        </li>
+                        <li class="rank-item1 ">
+                            <p class="game-name1">英雄联盟</p>
+                            <img src="./l-uploads/20210104171412-491756.jpg" alt="" class="rank-img">
+                            <div class="rank-btn-bar">
+                                <a href="#" rel="noopener" target="_blank" class="rank-btn">进入官网</a>
+                                <a href="#" rel="noopener" target="_blank" class="rank-btn">下载游戏</a>
+                            </div>
+                            <span class="rank-order1 rank-order">2</span>
+                        </li>
+                        <li class="rank-item1 ">
+                            <p class="game-name">地下城与勇士</p>
+                            <img src="./l-uploads/20201228153940-638628.jpg" alt="" class="rank-img">
+                            <div class="rank-btn-bar">
+                                <a href="#" rel="noopener" target="_blank" class="rank-btn">进入官网</a>
+                                <a href="#" rel="noopener" target="_blank" class="rank-btn">下载游戏</a>
+                            </div>
+                            <span class="rank-order1 rank-order">3</span>
+                        </li>
+                        <li class="rank-item1 ">
+                            <p class="game-name">FIFA Online4</p>
+                            <img src="./l-uploads/20201229112103-127467.jpg" alt="" class="rank-img">
+                            <div class="rank-btn-bar">
+                                <a href="#" rel="noopener" target="_blank" class="rank-btn">进入官网</a>
+                                <a href="#" rel="noopener" target="_blank" class="rank-btn">下载游戏</a>
+                            </div>
+                            <span class="rank-order">4</span>
+                        </li>
+                        <li class="rank-item1 rank-active">
+                            <p class="game-name">NBA2K Online 2</p>
+                            <img src="./l-uploads/20201228165353-132810.jpg" alt="" class="rank-img">
+                            <div class="rank-btn-bar">
+                                <a href="#" rel="noopener" target="_blank" class="rank-btn">进入官网</a>
+                                <a href="#" rel="noopener" target="_blank" class="rank-btn">下载游戏</a>
+                            </div>
+                            <span class="rank-order">5</span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- mobile game -->
+                <div class="ost-rank-col" id="rankList_5">
+                    <h2 class="rank-title"><a rel="noopener" href="#" target="_blank" class="rank-more">新品手游排行榜</a>
+                    </h2>
+                    <ul class="rank-list" id="rankList_3">
+                        <li class="rank-item2 rank-active">
+                            <p class="game-name">妄想山海</p>
+                            <img src="l-uploads/last1.jpg" alt="" class="rank-img  rank-img1">
+                            <div class="rank-btn-bar">
+                                <a href="#" rel="noopener" target="_blank" class="rank-btn">进入官网</a>
+                                <div class="rank-btn">
+                                    <span class="download-text">下载游戏</span>
+                                    <a href="#" rel="noopener" target="_blank" class="download-btn download-ios"></a>
+                                    <a href="#" rel="noopener" target="_blank"
+                                        class="download-btn download-android"></a>
+                                </div>
+                            </div>
+                            <span class="rank-order1 rank-order">1</span>
+                        </li>
+                        <li class="rank-item2 ">
+                            <p class="game-name game-name1">和平精英</p>
+                            <img src="l-uploads/last2.jpg" alt="" class="rank-img">
+                            <div class="rank-btn-bar">
+                                <a href="#" rel="noopener" target="_blank" class="rank-btn">进入官网</a>
+                                <div class="rank-btn">
+                                    <span class="download-text">下载游戏</span>
+                                    <a href="#" rel="noopener" target="_blank" class="download-btn download-ios"></a>
+                                    <a href="#" rel="noopener" target="_blank"
+                                        class="download-btn download-android"></a>
+                                </div>
+                            </div>
+                            <span class="rank-order1 rank-order">2</span>
+                        </li>
+                        <li class="rank-item2 ">
+                            <p class="game-name">穿越火线：枪战王者</p>
+                            <img src="l-uploads/last3.jpg" alt="" class="rank-img">
+                            <div class="rank-btn-bar">
+                                <a href="#" rel="noopener" target="_blank" class="rank-btn">进入官网</a>
+                                <div class="rank-btn">
+                                    <span class="download-text">下载游戏</span>
+                                    <a href="#" rel="noopener" target="_blank" class="download-btn download-ios"></a>
+                                    <a href="#" rel="noopener" target="_blank"
+                                        class="download-btn download-android"></a>
+                                </div>
+                            </div>
+                            <span class="rank-order1 rank-order">3</span>
+                        </li>
+                        <li class="rank-item2 ">
+                            <p class="game-name">火影忍者</p>
+                            <img src="l-uploads/last4.jpg" alt="" class="rank-img">
+                            <div class="rank-btn-bar">
+                                <a href="#" rel="noopener" target="_blank" class="rank-btn">进入官网</a>
+                                <div class="rank-btn">
+                                    <span class="download-text">下载游戏</span>
+                                    <a href="#" rel="noopener" target="_blank" class="download-btn download-ios"></a>
+                                    <a href="#" rel="noopener" target="_blank"
+                                        class="download-btn download-android"></a>
+                                </div>
+                            </div>
+                            <span class="rank-order">4</span>
+                        </li>
+
+
+
+                        <li class="rank-item2 ">
+                            <!-- <h2 class="rank-title rank-sub-title"><a rel="noopener" href="#" target="_blank"
+                                    class="rank-more">热门手游排行榜</a>
+                            </h2> -->
+                            <p class="game-name">王者荣耀</p>
+                            <img src="l-uploads/1last1.jpg" alt="" class="rank-img">
+                            <div class="rank-btn-bar">
+                                <a href="#" rel="noopener" target="_blank" class="rank-btn">进入官网</a>
+                                <div class="rank-btn">
+                                    <span class="download-text">下载游戏</span>
+                                    <a href="#" rel="noopener" target="_blank" class="download-btn download-ios"></a>
+                                    <a href="#" rel="noopener" target="_blank"
+                                        class="download-btn download-android"></a>
+                                </div>
+                            </div>
+                            <span class="rank-order">5</span>
+                        </li>
+                        <li class="rank-item2 ">
+                            <p class="game-name">和平精英</p>
+                            <img src="l-uploads/1last2.jpg" alt="" class="rank-img">
+                            <div class="rank-btn-bar">
+                                <a href="#" rel="noopener" target="_blank" class="rank-btn">进入官网</a>
+                                <div class="rank-btn">
+                                    <span class="download-text">下载游戏</span>
+                                    <a href="#" rel="noopener" target="_blank" class="download-btn download-ios"></a>
+                                    <a href="#" rel="noopener" target="_blank"
+                                        class="download-btn download-android"></a>
+                                </div>
+                            </div>
+                            <span class="rank-order">6</span>
+                        </li>
+                        <li class="rank-item2 ">
+                            <p class="game-name">妄想山海</p>
+                            <img src="l-uploads/1last3.jpg" alt="" class="rank-img">
+                            <div class="rank-btn-bar">
+                                <a href="#" rel="noopener" target="_blank" class="rank-btn">进入官网</a>
+                                <div class="rank-btn">
+                                    <span class="download-text">下载游戏</span>
+                                    <a href="#" rel="noopener" target="_blank" class="download-btn download-ios"></a>
+                                    <a href="#" rel="noopener" target="_blank"
+                                        class="download-btn download-android"></a>
+                                </div>
+                            </div>
+                            <span class="rank-order">7</span>
+                        </li>
+                        <li class="rank-item2 ">
+                            <p class="game-name">穿越火线：枪战王者</p>
+                            <img src="l-uploads/1last4.jpg" alt="" class="rank-img">
+                            <div class="rank-btn-bar">
+                                <a href="#" rel="noopener" target="_blank" class="rank-btn">进入官网</a>
+                                <div class="rank-btn">
+                                    <span class="download-text">下载游戏</span>
+                                    <a href="#" rel="noopener" target="_blank" class="download-btn download-ios"></a>
+                                    <a href="#" rel="noopener" target="_blank"
+                                        class="download-btn download-android"></a>
+                                </div>
+                            </div>
+                            <span class="rank-order">8</span>
+                        </li>
+                        <li class="rank-item2 ">
+                            <p class="game-name">火影忍者</p>
+                            <img src="l-uploads/1last5.jpg" alt="" class="rank-img">
+                            <div class="rank-btn-bar">
+                                <a href="#" rel="noopener" target="_blank" class="rank-btn">进入官网</a>
+                                <div class="rank-btn">
+                                    <span class="download-text">下载游戏</span>
+                                    <a href="#" rel="noopener" target="_blank" class="download-btn download-ios"></a>
+                                    <a href="#" rel="noopener" target="_blank" class="download-btn download-android">
+                                    </a>
+                                </div>
+                            </div>
+                            <span class="rank-order">9</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 头部 end -->
+    <!-- 导航栏 start -->
+    <div class="z-nav">
+        <div class="nav-f">
+            <div class="nav">
+                <a href="../s-home.html" target="_blank" class="logo">绝地求生官方网站</a>
+                <ul class="clearfix">
+                    <li>
+                        <i></i>
+                        <a href="./veteran.html">
+                            <b>老兵</b>
+                            <span>账号绑定</span>
+                        </a>
+                    </li>
+                    <li>
+                        <i></i>
+                        <a href="https://pubg.qq.com/act/a20171218lbhg/pg3.shtml" target="_blank">          <!-- 外部网站 -->
+                            <b>福利1</b>
+                            <span>老兵专属服装</span>
+                        </a>
+                    </li>
+                    <li class="wait">
+                        <i></i>
+                        <a href="#">
+                            <b>神秘福利</b>
+                            <span>敬请期待</span>
+                        </a>
+                    </li>
+                    <li class="wait">
+                        <i></i>
+                        <a href="#">
+                            <b>神秘福利</b>
+                            <span>敬请期待</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="denglu">
+                    <p>
+                        亲爱的用户，请
+                        <a href="javascript:;" class="qqdenglu">[登录]</a>
+                    </p>
+                </div>
+                <a href="../郭彤彤/infor.html" class="enter">进入官网</a>
+            </div>
+        </div>
+    </div>
+    <!-- 导航栏 end -->
+    <!-- 欢迎老兵 start -->
+    <div class="welcome">
+        <div class="w"></div>
+    </div>
+    <!-- 欢迎老兵 end -->
+    <!-- 主体内容 start -->
+    <div class="container">
+        <div class="w">
+            <!-- 老兵登记 start -->
+            <div class="check">
+                <div class="xiao_w">
+                    <div class="text">
+                        <div class="qian">*绑定前必读</div>
+                        <div class="duanluo">
+                            <div class="num1">1.</div>
+                            <div class="num1 p_1">2018年1月12日凌晨00：00之前在steam《绝地求生》创建角色的玩家，可绑定QQ号和steam账号，登记老兵身份，享受回归服务
+                            </div>
+                        </div>
+                        <div class="duanluo">
+                            <div class="num1">2.</div>
+                            <div class="num1 p_1">QQ和Steam账号——对应绑定，多个steam账号需要分别绑定单独的QQ号</div>
+                        </div>
+                        <div class="duanluo">
+                            <div class="num1">3.</div>
+                            <div class="num1 p_1">未来所有老兵可使用绑定的QQ号免费登陆国服。</div>
+                        </div>
+                        <div class="duanluo">
+                            <div class="num1">4.</div>
+                            <div class="num1 p_1">国服坚持打击作弊行为和外挂，被封停的账号将无法进行绑定</div>
+                        </div>
+                        <div class="duanluo">
+                            <div class="num1">5.</div>
+                            <div class="num1 p_1">请认准官网地址pubg.qq.com，从官网页面下载绑定器，不要从其他途径获取，保护滋生账号安全
+                                <a href="https://kf.qq.com/bills/180104selfsam8fab678.html" class="kefu" target="_blank">呼叫客服</a>          <!-- 外部网站 -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dvideo">
+                        <a href="javascript:;" class="avideo">
+                            <b></b>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- 老兵登记 end -->
+            <!-- 绑定方法 start -->
+            <div class="bind">
+                <!-- 里程碑 -->
+                <div class="milestone">
+                    <h2>老兵登记里程碑</h2>
+                    <strong class="s-num">9778523</strong>
+                    <div class="yellow-bg"></div>
+                    <a href="https://pubg.qq.com/webplat/info/news_version3/33247/33250/33268/33270/m19357/201801/683625.shtml" class="oldsolider" target="_blank">神秘福利</a>           <!-- 外部网站 -->
+                </div>
+                <!-- 里程碑 -->
+                <!-- 方法 -->
+                <div class="xiao_w">
+                    <div class="way">
+                        <div class="way-top">
+                            <h3>绑定方法</h3>
+                            <a href="javascript:;" class="click-denglu">点击登录</a>
+                        </div>
+                        <div class="way-qq">
+                            <div class="qqtxt1">QQ账号</div>
+                            <div class="qqtxt2">此QQ账号为将来您所登陆国服的账号</div>
+                            <div class="qqtxt3">
+                                <span>您可能会收到qq异地登录提示信息，此信息属于正常操作，<br>请放心登陆绑定；</span>
+                            </div>
+                        </div>
+                        <div class="way-steam">
+                            <div class="steam1">STEAM账号</div>
+                            <div class="steam2 style-steam">
+                                <span class="s1">Steam ID：</span>
+                                <span class="s2">暂无数据</span>
+                            </div>
+                            <div class="steam3 style-steam">
+                                <span class="s1">角色昵称：</span>
+                                <span class="s2">暂无数据</span>
+                            </div>
+                            <div class="steam4 style-steam">
+                                <span class="s1">创建时间：</span>
+                                <span class="s2">暂无数据</span>
+                            </div>
+                            <a href="javascript:;" class="start-bind">开始绑定</a>
+                        </div>
+                    </div>
+                    <div class="changeway">
+                        <a href="javascript:;" class="state">查看您的绑定状态</a>
+                        <div class="qiehuan1">
+                            <img src="./z-upload/load.jpg" alt="">
+                            <a href="https://down.qq.com/Pgame/bang/pgamebinder_sign_20181206.exe" class="bangdingqi">点击下载绑定器</a>          <!-- 外部网站 -->
+                            <a href="javascript:;" class="onevideo video_link">视频演示>></a>
+                            <a href="javascript:;" class="twovideo video_link">视频演示>></a>
+                            <a href="#" class="buzhou_link video_link">步骤示意图>></a>
+                            <a href="#" class="buzhou_div">步骤示意图</a>
+                        </div>
+                        <div class="qiehuan2">
+                            <img src="./z-upload/buzhou.jpg" alt="">
+                        </div>
+                    </div>
+                    <a href="https://pubg.qq.com/act/a20171218lbhg/pg3.shtml" class="go" target="_blank">前往老兵专属套装</a>          <!-- 外部网站 -->
+                </div>
+                <!-- 方法 -->
+            </div>
+            <!-- 绑定方法 end -->
+            <!-- 常见问题 start -->
+            <div class="question">
+                <div class="xiao_w">
+                    <ul>
+                        <li>
+                            <div class="black_txt">Q：我的steam《绝地求生》账号和国服账号是什么关系？</div>
+                            <div class="white_txt">A：两者互相独立</div>
+                        </li>
+                        <li>
+                            <div class="black_txt">Q: 我有多个steam账号，都能绑定吗？</div>
+                            <div class="white_txt">A：可以，但是每个steam账号仅可与一个QQ号绑定，如果您有其他的steam账号，可以使用其他QQ号与之绑定。</div>
+                        </li>
+                        <li>
+                            <div class="black_txt">Q:被封号后，解封的用户能否进行绑定？</div>
+                            <div class="white_txt">A：可以。</div>
+                        </li>
+                        <li>
+                            <div class="black_txt">Q: 我绑错了steam账号，是否可以改绑？</div>
+                            <div class="white_txt">A：您可以通过页面上下载的绑定器进行解绑后重新绑定，
+                                需要注意的是，绑定后24小时内不能解绑。在您绑定的账号领取了老兵福利后，将无法再解绑。</div>
+                        </li>
+                        <li>
+                            <div class="black_txt">Q: 绑定账号是否有时间限制？</div>
+                            <div class="white_txt">A：绑定截止时间请关注官网后续公告，老兵们抓紧哦！</div>
+                        </li>
+                        <li>
+                            <div class="black_txt">Q: 我的steam账号密码忘记了怎么办？</div>
+                            <div class="white_txt">A：您可以通过注册账号时使用的邮箱找回密码，
+                                <a href="https://help.steampowered.com/zh-cn/" target="_blank">点击了解详情>></a>          <!-- 外部网站 -->
+                            </div>
+                        </li>
+                        <li>
+                            <div class="black_txt">Q: 我完成了老兵绑定，还需要去预约国服内测吗？</div>
+                            <div class="white_txt">A：是的，完成国服内测预约，后续可以获得专属定制T恤，同时有机会参与内测。
+                                <a href="#" target="_blank">点击前往预约页面>></a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="black_txt">Q: 如果以上都无法帮我解决问题怎么办呢？</div>
+                            <div class="white_txt">A：您可以去 <a href="https://kf.qq.com/bills/180104selfsam8fab678.html" target="_blank">客服FAQ专区>></a>看看，那里一定能帮到您。</div>          <!-- 外部网站 -->
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 常见问题 end -->
+        </div>
+    </div>
+    <!-- 主体内容 end -->
+    <!-- 尾部 start -->
+    <footer class="footer">
+        <div class="footer_dark">
+            <div class="footter_cpright">
+                <div class="foot_lefts">
+                    <a target="_blank" rel="noopener" href="#" title="腾讯互动娱乐" class="foot_ieg_logo">腾讯互动娱乐</a>
+                    <span class="gfooter_selflogo"></span>
+                </div>
+                <ul class="foot_links">
+                    <li class="link_map">
+                        <a target="_blank" rel="noopener" href="#">腾讯互动娱乐</a>
+                        <span class="f_line">|</span>
+                        <a target="_blank" rel="noopener" href="#">服务条款</a>
+                        <span class="f_line">|</span>
+                        <a target="_blank" rel="noopener" href="#">隐私保护指引</a>
+                        <span class="f_line">|</span>
+                        <a target="_blank" rel="noopener" href="#">儿童隐私保护指引</a>
+                        <span class="f_line">|</span>
+                        <a target="_blank" rel="noopener" href="#">腾讯游戏招聘</a>
+                        <span class="f_line">|</span>
+                        <a target="_blank" rel="noopener" href="#">腾讯游戏客服</a>
+                        <span class="f_line">|</span>
+                        <a target="_blank" rel="noopener" href="#">游戏列表</a>
+                        <span class="f_line">|</span>
+                        <a target="_blank" rel="noopener" href="#">广告服务及商务合作</a>
+
+                    </li>
+                    <li class="copyright_zh">
+                        <a target="_blank" rel="noopener" href="#">腾讯公司版权所有</a>
+                        <a target="_blank" rel="noopener" href="#">网络游戏行业防沉迷自律公约</a>
+                    </li>
+                    <li class="copyright_en">
+                        <p class="copyright_txt">COPYRIGHT © 1998 - 2022 TENCENT. ALL RIGHTS RESERVED.</p>
+                        <p class="foot_copy copyright_txt">©PUBG Corporation. All rights reserved.</p>
+                    </li>
+                    <li class="copyright_public">
+                        <a target="_blank" rel="noopener" href="#" title="深圳市市场监督管理局企业主体身份公示"><img
+                                src="./l-images/gswj.png" width="15" height="15" alt="深圳市市场监督管理局企业主体身份公示">工商网监电子标识 </a>
+                        <span class="f_line">|</span>
+                        <a target="_blank" rel="noopener" href="#">粤网文[2020]3396-195号</a>
+                        <span class="f_line">|</span>
+                        <a target="_blank" rel="noopener" href="#">（署）网出证（粤）字第054号</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- 尾部 end -->
+    <!-- 视频演示 start -->
+    <div class="video_box">
+        <div class="video_div">
+            <!-- <div class="shiping"> -->
+            <video src="./z-video/fo1.mp4" loop muted autoplay></video>
+            <!-- </div> -->
+            <a href="javascript:;" class="video_close">×</a>
+        </div>
+
+    </div>
+    <!-- 视频演示 end -->
+    <!-- 遮罩 -->
+    <div class="overplay"></div>
+    <!-- 遮罩 -->
+    <!-- TOP -->
+    <a href="javascript:;" class="atop">返回顶部</a>
+    <!-- TOP -->
+    <!-- QQ登录弹出框 start -->
+    <div class="z-login">
+        <div class="lo-close">×</div>
+        <div class="lo-login1">
+            <div class="lo-title">快速安全登录</div>
+            <div class="lo-tips">
+                请使用
+                <a class="link-tips" href="http://im.qq.com/mobileqq/#from=login" target="_blank">QQ手机版</a>          <!-- 外部网站 -->
+                扫描二维码，<br>安全登录，防止盗号。
+            </div>
+            <div class="lo-qr">
+                <img src="./z-upload/login-qr.png" alt="">
+                <div class="lo-bottom">
+                    <a href="javascript:;" class="zhanghao">帐号密码登录</a>
+                    <span>|</span>
+                    <a href="https://ssl.zc.qq.com/v3/index-chs.html?from=pt" class="zhuce" target="_blank">注册新账号</a>          <!-- 外部网站 -->
+                    <span>|</span>
+                    <a href="https://support.qq.com/products/14800" class="yijian" target="_blank">意见反馈</a>          <!-- 外部网站 -->
+                </div>
+            </div>
+
+        </div>
+        <div class="lo-login2">
+            <div class="lo-title2">帐号密码登录</div>
+            <div class="lo-tips2">
+                推荐使用
+                <a class="link-tips2" href="javascript:;">快速安全登录</a>，防止盗号。
+                <input type="text" class="lo-user" placeholder="支持QQ号/邮箱/手机登录">
+                <input type="password" class="lo-pwd" placeholder="密码">
+                <input type="submit" value="授权登录" class="sub">
+                <div class="lo-bottom2">
+                    <a href="https://accounts.qq.com/find/password" class="forget" target="_blank">忘了密码？</a>          <!-- 外部网站 -->
+                    <span>|</span>
+                    <a href="https://ssl.zc.qq.com/v3/index-chs.html?from=pt" class="zhuce" target="_blank">注册新账号</a>          <!-- 外部网站 -->
+                    <span>|</span>
+                    <a href="https://support.qq.com/products/14800" class="yijian" target="_blank">意见反馈</a>          <!-- 外部网站 -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- QQ登录弹出框 end -->
+    <script src="./z-js/l-commen.js"></script>
+    <script src="./z-js/veteran.js"></script>
+</body>
+
+</html>

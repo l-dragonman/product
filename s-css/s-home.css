@@ -1,0 +1,1246 @@
+/**
+ * fullPage 2.4.6
+ * https://github.com/alvarotrigo/fullPage.js
+ * MIT licensed
+ *
+ * Copyright (C) 2013 alvarotrigo.com - A project by Alvaro Trigo
+ */
+ html, body {
+    margin: 0;
+    padding: 0;
+    overflow:hidden;
+
+    /*Avoid flicker on slides transitions for mobile phones #336 */
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+body {
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+    color: #333;
+}
+
+/* 头部区域start */
+.bigbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1921px;
+    height: 42px;
+    background-color: #fff;
+    z-index: 200;
+}
+
+.shortcut {
+    /* display: flex; */
+    /* justify-content: center; */
+    /* position: relative; */
+    position: absolute;
+    top: 0;
+    left: 0%;
+    width: 100%;
+    height: 42px;
+    border-bottom: 1px solid #f5f5f5;
+    color: #333;
+    z-index: 999;
+}
+
+.shortcut_w {
+    display: flex;
+    position: relative;
+    width: 990px;
+    height: 41px;
+    background-color: #fff;
+    margin: 0px auto;
+}
+.tx_games {
+    position: relative;
+    width: 150px;
+    height: 41px;
+    background: url(../lihe/l-images/logo1.png) no-repeat;  
+    z-index: 9999;
+}
+.l-plic {
+    width: 200px;
+    height: 90px;
+    display: block;
+}
+.tx_games .tx_game{
+    /* position: relative; */
+    width: 150px;
+    height: 41px;
+    display: block;
+    opacity: 0;
+    z-index: 9999;
+}
+.tx_games .activity{
+    width: 230px;
+    height: 40px;
+}
+.shortcut_info {
+    position: absolute;
+    right: 30px;
+    top: 0;
+    display: flex;
+}
+.shortcut_info .czsh{
+    position: relative;
+    width: 118px;
+    line-height: 41px;
+    height: 41px;
+    margin-right: 20px;
+    padding-left: 30px;
+    font-size: 14px;
+    font-weight: 400;
+    /* background-color: skyblue; */
+}
+.shortcut_info .czsh a::before{
+    display: block;
+    content: '';
+    position: absolute;
+    top: 6px;;
+    left: 2px;
+    width: 30px;
+    height: 30px;
+    background: url(../lihe/l-images/title_sprite.png) -30px 0px;
+    color: #464646;
+}
+.shortcut_info .czsh a:hover{
+    color: #ff4e00;
+}
+
+.shortcut_info .hotlist{
+    position: relative;
+    width: 127px;
+    height: 41px;
+    line-height: 41px;
+    /* background-color: red; */
+    padding-right: 25px;
+    font-size: 14px;
+    font-weight: 400;
+}
+.shortcut_info .hotlist a::after{
+    display: block;
+    content: '';
+    position: absolute;
+    top: 12px;;
+    right: 0px;
+    width: 30px;
+    height: 30px;
+    background: url(../lihe/l-images/title_sprite.png) -125px 0px;
+    color: #464646;
+    transform: rotate(90deg);
+    opacity: .1;
+}
+.big_activity {
+    display: flex;
+    position: absolute;
+    left: 458px;
+    top: 0px;
+    display: none;
+    width: 970px;
+    height: 185px;
+    z-index: 99;  
+}
+.ost-rank {
+    /* display: flex; */
+    /* justify-content: space-between; */
+    position: absolute;
+    left: 37%;
+    top: 40px;
+    display: none;
+    /* z-index: 300; */
+   
+    width: 707px;
+    height: 580px;
+    background-color: #fafafa;
+    z-index: 999;
+}
+.ost-rank-col {
+    float: left;
+    margin-left: 10px;
+    width: 224px;
+}
+.rank-title {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+
+.rank-more {
+    display: block;
+    color: #333;
+    position: relative;
+}
+.rank-list {
+    display: block;
+}
+.rank-item {
+    margin-bottom: 24px;
+    width: 200px;
+    height: 16px;
+    padding-left: 18px;
+    position: relative;
+    /* overflow: hidden; */
+}
+.rank-item1 {
+    margin-bottom: 24px;
+    width: 200px;
+    height: 16px;
+    padding-left: 18px;
+    position: relative;
+    /* overflow: hidden; */
+}
+.rank-item2 {
+    margin-bottom: 24px;
+    width: 200px;
+    height: 16px;
+    padding-left: 18px;
+    position: relative;
+    /* overflow: hidden; */
+}
+.rank-item3 {
+    margin-bottom: 24px;
+    width: 200px;
+    height: 16px;
+    padding-left: 18px;
+    position: relative;
+    /* overflow: hidden; */
+}
+.game-name {
+    font-size: 12px;
+    line-height: 16px;
+    /* padding-left: 22px; */
+  
+  
+}
+.game-name1 {
+    /* font-size: 12px;
+    line-height: 16px; */
+    /* padding-left: 22px; */
+    margin-top: 80px;
+  
+}
+/* #rankList_2 {
+    display: block;
+} */
+
+
+.rank-img {
+    position: absolute;
+    width: 200px;
+    height: 90px;
+    top: 0;
+    left: 0;
+    /* display: block; */
+    display: none;
+    border: none;
+  
+    
+}
+.rank-img2 {
+    margin-top: -50px;
+}
+.rank-img1 {
+    /* position: absolute; */
+    width: 200px;
+    height: 90px;
+    /* top: 0;
+    left: 0; */
+    
+    display: block;
+    /* border: none; */
+   
+}
+
+.rank-btn-bar {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 28px;
+    background: rgba(0,0,0,0.7);
+    display: none;
+}
+.rank-btn {
+    display: block;
+    width: 50%;
+    font-size: 14px;
+    line-height: 28px;
+    text-align: center;
+    color: #fff;
+}
+.rank-order {
+    /* background-color: #c62828; */
+    background-color: #ccc;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-size: 12px;
+    width: 16px;
+    height: 16px;
+    text-align: center;
+    line-height: 16px;
+    color: #fff;
+}
+.rank-order1 {
+    /* background-color: #c62828; */
+    background-color: #c62828;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-size: 12px;
+    width: 16px;
+    height: 16px;
+    text-align: center;
+    line-height: 16px;
+    color: #fff;
+}
+
+
+/* 头部区域end */
+/* 导航栏区域start */
+.top_nav {
+    position: absolute;
+    top: 4%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 88px;
+    position: fixed;
+    overflow: hidden;
+    background: url(../lihe/l-images/bg_top.png) no-repeat 50% 0;
+    z-index: 100;
+}
+.top_nav_w {
+    position: relative;
+    width: 1205px;
+    margin: 0 auto;
+}
+.top_logo {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 129px;
+    height: 66px;
+    display: block;
+    text-indent: -999em;
+    background: url(../lihe/l-images/logo.png) no-repeat 0 0;
+}
+.top_nav_middle {
+    position: absolute;
+    top: 0px;
+    left: 140px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 775px;
+    height: 48px;
+    padding: 27px 0 0 46px;
+}
+
+.top_nav_middle li a {
+    color: #ccc;
+    font-size: 14px;
+    font-weight: bold;
+}
+.top_nav_middle li a:hover {
+    color: #e69800;
+}
+.website_enter {
+    position: absolute;
+    top: 19px;
+    right: 0;
+    display: block;
+    width: 142px;
+    height: 40px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    background: #e69800;
+    text-shadow: 1px 1px 1px #b27601;
+}
+/* 添加触发样式 */
+.pannel_active {
+    color: #e69800 !important;
+}
+/* 导航栏区域end */
+.footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 160px;
+    background: #000;
+    border-top: 1px solid #252525;
+    margin-top: 300px;
+    z-index: 100;
+}
+.footer_dark {
+    width: 1200px;
+    height: 160px;
+    margin: 0 auto;
+    background: #000;
+    color: #494949;
+    text-align: left;
+    min-width: 1050px;
+}
+.footter_cpright {
+    position: relative;
+    padding: 20px 0px 0px;
+    height: 159px;
+    color: #494949;
+    text-align: left;
+}
+ .foot_lefts {
+     display: flex;
+    position: absolute;
+    left: 0px;
+    top: 20px;
+    width: 276px;
+    height: 86px;
+    color: #494949;
+}
+ .foot_ieg_logo{
+    width: 180px;
+    height: 35px;
+    color: #676767;
+    margin: 40px 20px 0 0px;
+    background: url(../lihe/l-images/foot-dark.png) no-repeat ;
+    text-indent: -999em;
+    overflow: hidden;
+}
+ .gfooter_selflogo{
+     display: block;
+     margin-top: 30px;
+     margin-left: 10px;
+    width: 66px;
+    height: 56px;
+    background: url(../lihe/l-images/nav_spr.png) no-repeat -627px -172px;
+ }
+ .foot_links {
+     position: absolute;
+    left: 277px;
+     top: 20px;
+     width: 828px;
+     height: 100px;
+     padding-left: 50px;
+
+ }
+ .link_map {
+     display: flex;
+    color: #676767;
+    line-height: 20px;
+ }
+ .link_map a {
+     padding-right: 10px;
+     color: #676767;
+     line-height: 20px;
+ }
+ .link_map a:hover {
+    text-decoration: underline;
+ }
+
+ .copyright_zh {
+    display: flex;
+    color: #676767;
+    line-height: 20px;
+ }
+ .copyright_en {
+    color: #676767;
+    line-height: 20px;
+ }
+ .copyright_zh a {
+    color: #676767;
+    line-height: 20px;
+     padding-right: 10px;
+ }
+
+ .copyright_public {
+    display: flex;
+    color: #676767;
+    line-height: 20px;
+ }
+ .copyright_public a {
+     color: #676767;
+    line-height: 20px;
+    margin-right: 2px;
+ }
+.f_line {
+    color: #676767;
+    line-height: 20px;
+    padding-right: 10px;
+}
+
+
+#superContainer {
+    height: 100%;
+    position: relative;
+
+    /* Touch detection for Windows 8 */
+    -ms-touch-action: none;
+
+    /* IE 11 on Windows Phone 8.1*/
+    touch-action: none;
+}
+.fp-section {
+    position: relative;
+    -webkit-box-sizing: border-box; /* Safari<=5 Android<=3 */
+    -moz-box-sizing: border-box; /* <=28 */
+    box-sizing: border-box;
+}
+.fp-slide {
+    float: left;
+}
+.fp-slide, .fp-slidesContainer {
+    height: 100%;
+    display: block;
+}
+.fp-slides {
+    z-index:1;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    -webkit-transition: all 0.3s ease-out; /* Safari<=6 Android<=4.3 */
+    transition: all 0.3s ease-out;
+}
+.fp-section.fp-table, .fp-slide.fp-table {
+    display: table;
+    table-layout:fixed;
+    width: 100%;
+}
+.fp-tableCell {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+}
+.fp-slidesContainer {
+    float: left;
+    position: relative;
+}
+.fp-controlArrow {
+    position: absolute;
+    z-index: 4;
+    top: 50%;
+    cursor: pointer;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    margin-top: -38px;
+}
+.fp-controlArrow.fp-prev {
+    left: 15px;
+    width: 0;
+    border-width: 38.5px 34px 38.5px 0;
+    border-color: transparent #fff transparent transparent;
+}
+.fp-controlArrow.fp-next {
+    right: 15px;
+    border-width: 38.5px 0 38.5px 34px;
+    border-color: transparent transparent transparent #fff;
+}
+.fp-scrollable {
+    overflow: scroll;
+
+}
+.fp-notransition {
+    -webkit-transition: none !important;
+    transition: none !important;
+}
+#fp-nav {
+    position: fixed;
+    z-index: 100;
+    margin-top: -32px;
+    top: 50%;
+    opacity: 1;
+}
+#fp-nav.right {
+    right: 17px;
+}
+#fp-nav.left {
+    left: 17px;
+}
+.fp-slidesNav{
+    position: absolute;
+    z-index: 4;
+    left: 50%;
+    opacity: 1;
+}
+.fp-slidesNav.bottom {
+    bottom: 17px;
+}
+.fp-slidesNav.top {
+    top: 17px;
+}
+#fp-nav ul,
+.fp-slidesNav ul {
+  margin: 0;
+  padding: 0;
+}
+#fp-nav ul li,
+.fp-slidesNav ul li {
+    display: block;
+    width: 14px;
+    height: 13px;
+    margin: 7px;
+    position:relative;
+}
+.fp-slidesNav ul li {
+    display: inline-block;
+}
+#fp-nav ul li a,
+.fp-slidesNav ul li a {
+    display: block;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    text-decoration: none;
+}
+#fp-nav ul li a.active span,
+.fp-slidesNav ul li a.active span {
+    background: #333;
+}
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+    top: 2px;
+    left: 2px;
+    width: 8px;
+    height: 8px;
+    border: 1px solid #000;
+    background: rgba(0, 0, 0, 0);
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+}
+#fp-nav ul li .fp-tooltip {
+    position: absolute;
+    top: -2px;
+    color: #fff;
+    font-size: 14px;
+    font-family: arial, helvetica, sans-serif;
+    white-space: nowrap;
+    max-width: 220px;
+    overflow: hidden;
+    display: block;
+    opacity: 0;
+    width: 0;
+}
+#fp-nav ul li:hover .fp-tooltip {
+    -webkit-transition: opacity 0.2s ease-in;
+    transition: opacity 0.2s ease-in;
+    width: auto;
+    opacity: 1;
+}
+#fp-nav ul li .fp-tooltip.right {
+    right: 20px;
+}
+#fp-nav ul li .fp-tooltip.left {
+    left: 20px;
+}
+
+
+
+/* video {
+    object-fit: fill;
+    width: 100%;
+    height: 102%;
+    margin-top: -10px;
+} */
+
+/* 第三副效果图开始 */
+.section .u-ft {
+    position: relative;
+}
+.section .u-ft-1 {
+    position: absolute;
+    top: 45%;
+    left: 30%;
+    width: 400px;
+    height: 120px;
+    background: url(../s-images/sprite.png) no-repeat -788px -215px;
+    z-index: 1;
+}
+
+.section .u-ft-2 {
+    position: absolute;
+    top: 58%;
+    left: 33%;
+    width: 550px;
+    height: 100px;
+    background: url(../s-images/sprite.png) no-repeat -788px -330px;
+    z-index: 1;
+}
+
+.section .u-ft-3 {
+    position: absolute;
+    top: 70%;
+    left: 40%;
+    font-size: 12px;
+    color: white;
+    z-index: 1;
+}
+
+.section .u-halor {
+    position: absolute;
+    top: 74%;
+    left: 55%;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 20px;
+    color: #e69800;
+    font-size: 16px;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.u-public1 {
+    position: absolute;
+    top: 0;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, .6);
+    animation: maopao1 1.5s linear infinite;
+}
+
+.u-public2 {
+    position: absolute;
+    top: 0;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, .6);
+    animation: maopao2 1.5s linear infinite;
+}
+
+.u-public3 {
+    position: absolute;
+    top: 0;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, .6);
+    animation: maopao3 1.5s linear infinite;
+}
+
+@keyframes maopao1 {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+@keyframes maopao2 {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: scale(3);
+        opacity: 0;
+    }
+}
+
+@keyframes maopao3 {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: scale(4);
+        opacity: 0;
+    }
+}
+.u-halor span {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #e9e9e8;
+    display: block;
+    text-align: center;
+    line-height: 25px;
+    margin-left: 25px;
+    color: #e69800;
+    font-size: 16px;
+    z-index: 5;
+    font-weight: bold
+}
+/* 第三幅最上一层基本样式已经完成 */
+
+/* 狙击枪盒子 */
+.section .u-sniper {
+    opacity: 0;
+    position: absolute;
+    top: 10%;
+    left: 53%;
+    width: 600px;
+    height: 600px;
+    transition: all 3s;
+}
+
+.u-sniper-top {
+    position: relative;
+    width: 100%;
+    height: 50%;
+    background-color: transparent;
+
+}
+
+.u-sniper-top .u-gun1 {
+    position: absolute;
+    top: 37%;
+    left: 5%;
+    width: 580px;
+    height: 100px;
+    background: url(../u-upload/weapon.png) no-repeat 0px 0px;
+    /* transform: scale(0.8); */
+}
+
+
+.part1,
+.part2,
+.part3,
+.part4,
+.part5 {
+    width: 48px;
+    height: 48px;
+    background-color: rgba(45, 27, 61, 0.8);
+}
+
+.part1 {
+    position: absolute;
+    top: 28%;
+    left: 55%;
+    background: url(../u-upload/equip.png) no-repeat -7px -820px;
+
+}
+
+.part2 {
+    position: absolute;
+    top: 70%;
+    left: 15%;
+    background: url(../u-upload/equip.png) no-repeat -7px -940px;
+
+}
+
+.part3 {
+    position: absolute;
+    top: 70%;
+    left: 30%;
+    background: url(../u-upload/equip.png) no-repeat -7px -1060px;
+
+}
+
+.part4 {
+    position: absolute;
+    top: 70%;
+    left: 55%;
+    background: url(../u-upload/equip.png) no-repeat -7px -1000px;
+
+}
+
+.part5 {
+    position: absolute;
+    top: 70%;
+    left: 80%;
+    background: url(../u-upload/equip.png) no-repeat -70px -1120px;
+
+}
+
+
+/* 步枪盒子 */
+
+.u-sniper-bottom {
+    position: relative;
+    width: 100%;
+    height: 50%;
+    background-color: transparent;
+}
+
+.u-sniper-bottom .u-gun2 {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    width: 590px;
+    height: 220px;
+    background: url(../u-upload/weapon.png) no-repeat 0px -120px;
+    /* transform: scale(0.8); */
+
+}
+
+.rifle1,
+.rifle2,
+.rifle3,
+.rifle4,
+.rifle5 {
+    width: 48px;
+    height: 48px;
+    background-color: rgba(45, 27, 61, 0.8);
+}
+
+.rifle1 {
+    position: absolute;
+    top: 5%;
+    left: 55%;
+    background: url(../u-upload/equip.png) no-repeat -7px -820px;
+
+}
+
+.rifle2 {
+    position: absolute;
+    top: 75%;
+    left: 15%;
+    background: url(../u-upload/equip.png) no-repeat -7px -940px;
+}
+
+.rifle3 {
+    position: absolute;
+    top: 75%;
+    left: 30%;
+    background: url(../u-upload/equip.png) no-repeat -7px -1060px;
+
+}
+
+.rifle4 {
+    position: absolute;
+    top: 75%;
+    left: 55%;
+    background: url(../u-upload/equip.png) no-repeat -7px -1000px;
+
+}
+
+.rifle5 {
+    position: absolute;
+    top: 75%;
+    left: 80%;
+    background: url(../u-upload/equip.png) no-repeat -70px -1120px;
+
+}
+
+/* 天气地形样式 */
+.u-tupian {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-top: -10px;
+    z-index: 1;
+}
+
+.u-climate {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.u-shade {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 101%;
+    background-color: rgba(12, 12, 12, 1);
+    opacity: 1;
+
+}
+
+.u-weather {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 102%;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.u-weather li {
+    flex: 1;
+    overflow: hidden;
+    transition: all 1s;
+}
+
+.u-weather1 img,
+.u-weather2 img,
+.u-weather3 img {
+    width: 130%;
+    height: 100%;
+}
+
+.u-headline {
+    position: absolute;
+    top: 20%;
+    left: 31%;
+    width: 800px;
+    height: 89px;
+    background: url(../s-images/sprite.png) no-repeat 0px -418px;
+    /* transform: scale(.8); */
+    z-index: 3;
+}
+
+.word1,
+.word2,
+.word3,
+.word4,
+.word5,
+.word6,
+.word7,
+.word8 {
+    transition: all 1s;
+}
+
+.word1 {
+    position: absolute;
+    top: 45%;
+    left: 10%;
+    width: 100px;
+    height: 75px;
+    background: url(../s-images/sprite.png) no-repeat -332px -679px;
+    /* transform: scale(.8); */
+    transition: all 2.5s;
+    z-index: 3;
+}
+
+.word2 {
+    position: absolute;
+    top: 45%;
+    left: 47%;
+    width: 100px;
+    height: 75px;
+    background: url(../s-images/sprite.png) no-repeat -233px -679px;
+    /* transform: scale(.8); */
+    z-index: 3;
+}
+
+.word3 {
+    position: absolute;
+    top: 45%;
+    left: 80%;
+    width: 100px;
+    height: 75px;
+    background: url(../s-images/sprite.png) no-repeat -432px -679px;
+    transform: scale(.8);
+    z-index: 3;
+}
+
+.u-cloud {
+    position: absolute;
+    top: 78%;
+    left: 35%;
+    width: 113px;
+    height: 87px;
+    background: url(../s-images/sprite.png) no-repeat 0px -762px;
+    /* transform: scale(.8); */
+    z-index: 3;
+}
+
+.u-wenzi1,
+.u-tianqi {
+    color: #e69800;
+}
+
+.u-xian1 {
+    background-color: #e69800;
+}
+
+.u-hill {
+    position: absolute;
+    top: 78%;
+    left: 57%;
+    width: 126px;
+    height: 87px;
+    background: url(../s-images/sprite.png) no-repeat -111px -679px;
+    /* transform: scale(.8); */
+    z-index: 3;
+}
+
+.u-cloud-ft {
+    position: absolute;
+    top: 89%;
+    left: 33%;
+    width: 180px;
+    height: 150px;
+    text-align: center;
+    z-index: 3;
+}
+
+.u-cloud-ft span,
+.u-hill-ft span {
+    display: block;
+    margin-top: 8px;
+}
+
+.u-cloud-ft span:first-child,
+.u-hill-ft span:first-child {
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.u-cloud-ft span:nth-child(2),
+.u-hill-ft span:nth-child(2) {
+    margin-left: 80px;
+    width: 20px;
+    height: 1px;
+}
+
+.u-cloud-ft span:last-child,
+.u-hill-ft span:last-child {
+    font-size: 8px;
+    font-weight: 200;
+}
+
+.u-hill-ft {
+    position: absolute;
+    top: 90%;
+    left: 55%;
+    width: 180px;
+    height: 150px;
+    text-align: center;
+    z-index: 3;
+}
+
+/* 山形背景 */
+.u-terrain {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.u-chevron {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 102%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.u-chevron li {
+    flex: 1;
+    overflow: hidden;
+    transition: all 1s;
+}
+
+.u-chevron li img {
+    width: 120%;
+    height: 100%;
+}
+
+
+
+.u-chevron .word4 {
+    position: absolute;
+    top: 45%;
+    left: 7%;
+    width: 100px;
+    height: 76px;
+    background: url(../s-images/sprite.png) no-repeat -232px -753px;
+    z-index: 3;
+}
+
+.u-chevron .word5 {
+    position: absolute;
+    top: 45%;
+    left: 27%;
+    width: 100px;
+    height: 76px;
+    background: url(../s-images/sprite.png) no-repeat -333px -753px;
+    z-index: 3;
+}
+
+.u-chevron .word6 {
+    position: absolute;
+    top: 45%;
+    left: 47%;
+    width: 100px;
+    height: 76px;
+    background: url(../s-images/sprite.png) no-repeat -433px -753px;
+    z-index: 3;
+}
+
+.u-chevron .word7 {
+    position: absolute;
+    top: 45%;
+    left: 67%;
+    width: 100px;
+    height: 76px;
+    background: url(../s-images/sprite.png) no-repeat -533px -753px;
+
+    z-index: 3;
+}
+
+.u-chevron .word8 {
+    position: absolute;
+    top: 45%;
+    left: 87%;
+    width: 100px;
+    height: 76px;
+    background: url(../s-images/sprite.png) no-repeat -633px -753px;
+    z-index: 3;
+}
+
+/* 第一幅视频 */
+.s-firstpage {
+    position: relative;
+}
+.s-ship {
+    display: none;
+    position: absolute;
+    top: 12%;
+    left: 26%;
+    width: 900px;
+    height: 600px;
+    z-index: 2;
+}
+.s-x {
+    display: none;
+    position: absolute;
+    top: 10%;
+    left: 73%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    cursor: pointer;
+    z-index: 2;
+}
+.s-zezhao {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.7);
+    z-index: 1;
+}

@@ -1,0 +1,813 @@
+
+/* 固定定位 */
+.s-scroll_tips {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20px;
+    width: 24px;
+    height: 78px;
+    background: url(../s-images/qita.png) -86px 0 ;
+     z-index: 999;
+    }
+
+    /* 侧边nav */
+    .s-navleft {
+        position: fixed;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 2.5%;
+        width: 42px;
+        height: 936px;
+        background: url(../s-images/bg_nav.png) 0 90px no-repeat;
+        z-index: 999;
+    }
+/* 模块一的制作 */
+
+.s-firstpage {
+    position: relative;
+}
+.s-play {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    width: 81px;
+    height: 81px;
+    background: url(../s-images/qita.png) 0 0;
+    transform: translateX(-50%);
+    cursor: pointer;
+    z-index: 99;
+}
+.s-play a {
+    display: block;
+    width: 81px;
+    height: 81px;
+}
+.s-firsttext {
+    position: absolute;
+    top: 49%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 719px;
+    height: 364px;
+    background: url(../s-images/logo_b.png) no-repeat;
+}
+/* 模块二的动画制作 */
+.s-oneamn {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+ .section video {
+     display: block;
+    object-fit: fill;
+    width: 100%;
+    /* height: 100%; */
+     height: 102%;
+    margin-top: -10px; 
+  }
+  .s-onevodie {
+      display: block;
+  }
+  .s-onetop {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: 100%;
+      /* margin-bottom: -10px;  */
+      background: url(../s-images/bg_vodie1.jpg);
+      background-size: cover;
+      z-index: 1;
+  }
+ .s-texttop {
+      position: absolute;
+      width: 447px;
+      height: 97px;
+      top: 46%;
+      left: 35%;
+      /* transform: translateX(-50%); */
+      /* transform: translateY(-50%); */
+      background: url(../s-images/qita.png) -250px -220px no-repeat ;
+      z-index: 1;
+  }
+
+ .s-textunder {
+    position: absolute;
+    width: 462px;
+    height: 97px;
+    top: 57%;
+    left: 39%;
+    /* transform: translateX(-50%); */
+    /* transform: translateY(-50%); */
+    background: url(../s-images/qita.png) -326px -317px no-repeat ;
+    z-index: 1;
+}
+.s-circle {
+    position: absolute;
+    top: 80%;
+    left: 56%;
+    cursor: pointer;
+    z-index: 10;
+    
+}
+.s-circle span {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #e9e9e8;
+    display: block;
+    text-align: center;
+    line-height: 25px;
+    color: #e69800;
+    font-size: 16px;
+     z-index: 5;
+     font-weight: bold;
+     transform: translateX(13px);
+}
+.s-endtext {
+    display: block;
+    position: absolute;
+    top: 69%;
+    left: 31%;
+    width: 516px;
+    height: 20px;
+    font-size: 14px;
+    /* background-color: azure; */
+    color: #fff;
+    z-index: 5;
+}
+
+.s-person {
+    /* display: none; */
+    opacity: 0;
+    position: absolute;
+    top: 28%;
+    right: 18%;
+    width: 507px;
+    height: 668px;
+    /* background-color: green; */
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    transition: all 2s;
+    overflow: hidden;
+    
+    z-index: 5;
+}
+.s-man {
+    width: 319px;
+    height: 732px;
+    background: url(../s-images/man.png);
+    margin-left: 100px;
+    transform: translateY(-15px);
+}
+.s-qecom {
+    position: absolute;
+    display: inline-block;
+    width: 83px;
+    height: 83px;
+    border: 1px solid #646863;
+
+}
+.s-eqright {
+    position: absolute;
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    border: 1px solid #646863;
+}
+/* 左边装备 */
+.s-equip1 {
+    top: 0;
+    left: 0;
+    background: url(../s-images/equip.png) 0 0 ;
+    /* animation: equipmove1 7s steps(7,end) infinite; */
+}
+
+.s-equip1:hover {
+     animation: equipmove1 3s steps(7,end) infinite;
+}
+.s-equip2 {
+    top: 30%;
+    left: 0;
+    background: url(../s-images/equip.png) 0 -82px ;
+}
+.s-equip2:hover {
+    animation: equipmove2 3s steps(7,end) infinite;
+}
+.s-equip3 {
+    top: 45%;
+    left: 0;
+    background: url(../s-images/equip.png) 0 -164px ;
+
+}
+.s-equip3:hover {
+    animation: equipmove3 2s steps(4,end) infinite;
+}
+@keyframes equipmove3 {
+    0%    { 
+        background-position: 0 -164px;}
+    100% {
+        background-position: -328px -164px;
+    }
+}
+.s-equip4 {
+    top: 60%;
+    left: 0;
+    background: url(../s-images/equip.png) 0 -246px ;
+
+}
+/* 右边装备 */
+.s-equip5 {  
+    top: 0;
+    right: 0;
+    background: url(../s-images/equip.png) 0 -328px ;
+}
+.s-equip5:hover {
+    animation: equipmove5 4s steps(7,end) infinite;
+}
+@keyframes equipmove5 {
+    0%    { 
+        background-position: 0 -328px;}
+    100% {
+        background-position: -483px -328px;
+    }
+}
+.s-equip6 {  
+    top: 12%;
+    right: 0;
+    background: url(../s-images/equip.png) 0 -397px ;
+}
+.s-equip6:hover {
+    animation: equipmove6 3s steps(5,end) infinite;
+}
+@keyframes equipmove6 {
+    0%    { 
+        background-position: 0 -397px;}
+    100% {
+        background-position: -345px -397px;
+    }
+}
+.s-equip7 {  
+    top: 31%;
+    right: 0;
+    background: url(../s-images/equip.png) 0 -467px ;
+}
+.s-equip7:hover {
+    animation: equipmove7 5s steps(14,end) infinite;
+}
+@keyframes equipmove7 {
+    0%    { 
+        background-position: 0 -467px;}
+    100% {
+        background-position: -966px -467px;
+    }
+}
+.s-equip8 {  
+    top: 43%;
+    right: 0;
+    background: url(../s-images/equip.png) 2px -535px ;
+}
+.s-equip8:hover {
+    animation: equipmove8 5s steps(14,end) infinite;
+}
+@keyframes equipmove8 {
+    0%    { 
+        background-position: 2px -535px;}
+    100% {
+        background-position: -964px -535px;
+    }
+}
+.s-equip9 {  
+    top: 55%;
+    right: 0;
+    background: url(../s-images/equip.png) 0 -603px ;
+}
+.s-equip9:hover {
+    animation: equipmove9 3s steps(4,end) infinite;
+}
+@keyframes equipmove9 {
+    0%    { 
+        background-position: 0 -603px;}
+    100% {
+        background-position: -276px -603px;
+    }
+}
+.s-equip10 {  
+    top: 76%;
+    right: 0;
+    background: url(../s-images/equip.png) 0 -673px ;
+}
+.s-equip10:hover {
+    animation: equipmove10 4s steps(10,end) infinite;
+}
+@keyframes equipmove10 {
+    0%    { 
+        background-position: 0 -673px;}
+    100% {
+        background-position: -690px -673px;
+    }
+}
+.s-equip11 {  
+    top: 88%;
+    right: 0;
+    background: url(../s-images/equip.png) 0 -741px ;
+}
+.s-equip11:hover {
+    animation: equipmove11 3s steps(5,end) infinite;
+}
+@keyframes equipmove11 {
+    0%    { 
+        background-position: 0 -741px;}
+    100% {
+        background-position: -345px -741px;
+    }
+}
+.s-person a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.s-eqright:hover {
+    border: 1px solid rgba(230, 152, 0);
+}
+.s-qecom:hover {
+    border: 1px solid rgba(230, 152, 0);
+}
+@keyframes equipmove1 {
+    0%    { 
+        background-position: 0 0;}
+    100% {
+        background-position: -575px 0;
+    }
+}
+@keyframes equipmove2 {
+    0%    { 
+        background-position: 0 -82px;}
+    100% {
+        background-position: -575px -82px;
+    }
+}
+
+
+/* 模块四的动画制作 */
+.s-fourbg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url(../s-images/bg_section4.jpg) no-repeat;
+    z-index: 2;
+}
+.s-fourvodie {
+    display: block;
+}
+ .s-fourbg .s-ftexttop {
+     position: absolute;
+     /* top: 37%;
+     left: 37%; */
+     top: 410px;
+     left: 716px;
+     width: 369px;
+     height: 81px;
+     background: url(../s-images/qita.png) 0px -508px;
+     z-index: 6;
+ }
+ .s-ftextunder {
+     position: absolute;
+     /* top: 46%;
+     left: 43%; */
+     top: 511px;
+     left: 830px;
+     width: 373px;
+     height: 82px;
+     background: url(../s-images/qita.png) -377px -508px ;
+     z-index: 6;
+ }
+ .s-fendtext {
+     position: absolute;
+     top: 604px;
+     left: 630px;
+     width: 500px;
+     height: 20px;
+     font-size: 14px;
+     color: #fff;
+     z-index: 6;
+ }
+ .s-fcircle {
+    position: absolute;
+    top: 63%;
+    left: 50%;
+    cursor: pointer;
+    z-index: 10;    
+}
+.s-fcircle span {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #e9e9e8;
+    display: block;
+    text-align: center;
+    line-height: 25px;
+    color: #e69800;
+    font-size: 16px;
+    font-weight: bold;
+    transform: translateX(13px);
+    
+}
+
+/* 汽车模块 */
+ .s-fourbg .s-car {
+     position: absolute;
+    opacity: 0;
+     width: 100%;
+     height: 100%;
+     z-index: 1;
+    transition: all 2s;
+
+ }
+ .s-fourbg .s-carbd .s-carpanel{
+    position: absolute;
+    top: 40%;
+    left: 28%;
+    opacity: 0;
+    transition: all 2s;
+}
+/* .s-fourbg .s-carbd .s-carpanel1 {
+    opacity: 1;
+} */
+/* .s-fourbg .s-carbd {
+    opacity: 0;
+} */
+.s-fourbg .s-carbd .s-carpanel img {
+    opacity: 1;
+    width: 810px;
+    height: 468px;
+    transition: all 3s;
+}
+.s-fourbg .s-carbd .s-carpanel:nth-child(1) {
+    position: absolute;
+    top: 34%;
+    left: 28%;
+}
+.s-fourbg .s-carbd .s-carpanel:nth-child(2) img {
+   
+    width: 525px;
+    height: 533px;
+}
+.s-fourbg .s-carbd .s-carpanel:nth-child(2) {
+    position: absolute;
+    top: 31%;
+    left: 37%;
+}
+.s-fourbg .s-carbd .s-carpanel:nth-child(3) img {
+  
+    width: 788px;
+    height: 413px;
+}
+.s-fourbg .s-carbd .s-carpanel:nth-child(3) {
+    position: absolute;
+    top: 40%;
+    left: 28%;
+}
+.s-fourbg .s-carbd .s-carpanel:nth-child(4) img {
+ 
+    width: 703px;
+    height: 514px;
+}
+.s-fourbg .s-carbd .s-carpanel:nth-child(4) {
+    position: absolute;
+    top: 32%;
+    left: 31%;
+}
+.s-fourbg .s-carbd .s-carpanel:nth-child(5) img {
+   
+    width: 1210px;
+    height: 343px;
+}
+.s-fourbg .s-carbd .s-carpanel:nth-child(5) {
+    position: absolute;
+    top: 42%;
+    left: 18%;
+}
+.s-carhd .s-peo {
+    position: absolute;
+    top: 90%;
+    /* top: 30%; */
+
+    left: 15%;
+    display: flex;
+    justify-content: space-around;
+    width: 1340px;
+    
+}
+
+.s-carhd .s-peo  b {
+    margin-top: 10px;
+}
+
+.s-carhd .s-peo li i {
+
+    display: inline-block;
+    
+}
+.s-carhd .s-peo li {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    font-size: 14px;
+    color: #fff;
+    justify-content: center;
+}
+.s-carhd .s-peo li:nth-child(1)  i {
+    width: 68px;
+    height: 60px;
+    background: url(../s-images/qita.png) 0 -852px;
+    margin-left: 20px;
+}
+.s-carhd .s-peo li:nth-child(2) i{
+    width: 84px;
+    height: 60px;
+    background: url(../s-images/qita.png) -72px -852px;
+    margin-left: 20px;
+
+}
+.s-carhd .s-peo li:nth-child(2) b {
+    transform: translateX(7px);
+}
+.s-carhd .s-peo li:nth-child(3) i {
+    width: 96px;
+    height: 60px;
+    background: url(../s-images/qita.png) -162px -852px;
+    margin-left: 5px;
+
+}
+.s-carhd .s-peo li:nth-child(4) i{
+    width: 96px;
+    height: 60px;
+    background: url(../s-images/qita.png) -162px -852px;
+    margin-left: 5px;
+
+}
+.s-carhd .s-peo li:nth-child(5) i{
+    width: 87px;
+    height: 60px;
+    background: url(../s-images/qita.png) -360px -852px;
+    margin-left: 0px;
+
+}
+
+.s-on {
+    color: #e69800 !important;
+}
+
+.s-carp {
+    opacity: 1 !important;
+}
+.s-show0 {
+    background: url(../s-images/qita.png) 0 -917px !important;
+}
+.s-show1 {
+    background: url(../s-images/qita.png) -72px -917px !important;
+}
+.s-show2 {
+    background: url(../s-images/qita.png) -162px -917px !important;
+}
+.s-show3 {
+    background: url(../s-images/qita.png) -162px -917px !important;
+}
+.s-show4 {
+    background: url(../s-images/qita.png) -360px -917px !important;
+}
+.s-lastmap {
+    width: 100%;
+    height: 102%;
+    background: url(../s-images/bg_section5.jpg);
+}
+
+/* 地图模块的制作 */
+.s-lastmap {
+    position: relative;
+}
+.s-lastmap .s-maptitle {
+    position: absolute;
+    top: 16%;
+    left: 30%;
+    width: 750px;
+    height: 85px;
+    background: url(../s-images/qita.png) 0 -595px;
+}
+.s-lastmap .s-nexttext {
+    position: absolute;
+    top: 27%;
+    left: 44%;
+    font-size: 14px;
+    transform: translateY(-10px);
+}
+.s-lastmap #s-info_l1 {
+    position: absolute;
+    top: 52%;
+    left: 38%;
+   width: 25px;
+   height: 25px;
+   
+}
+.s-info_l .s-halo {
+    position: relative;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    font-size: 16px;
+   
+    color: #e69800;  
+    z-index: 5; 
+}
+.s-info_l .s-halo span {
+    position: absolute;
+    top: 0;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 25px;
+    background-color: #e9e9e8;
+    font-weight: bold
+}
+.s-mapvodie1 {
+    position: absolute;
+    top: -180px;
+    left: 184%;
+    display: none;
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.s-mapvodie1 .s-mapv1 {
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.s-maptext1 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 450px;
+    height: 75px;
+    text-align: center;
+   background: rgba(0, 0, 0, .5);
+   padding: 10px 117px;
+   transform: translateY(-10px);
+   overflow: hidden;
+}
+.s-maptext1 span {
+    font-weight: 600;
+    display: block;
+    font-size: 16px;
+   
+}
+.s-maptext1 p {
+    margin: 0 auto;
+    font-size: 12px;
+}
+.s-info_r {
+    position: absolute;
+    top: 76%;
+    right: 37%;
+    z-index: 10;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    /* background-color: blueviolet; */
+}
+.s-info_r .s-halor span {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #e9e9e8;
+    display: block;
+    text-align: center;
+    line-height: 25px;
+    color: #e69800;
+    font-size: 16px;
+    z-index: 5;
+    font-weight: bold
+}
+/* 圈圈冒泡效果 */
+.s-halor b {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, .6);
+}
+.s-mapvodie2 {
+    position: absolute;
+    top: -329px;
+    left: -450px;
+    display: none;
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    overflow: hidden;
+    z-index: 1;
+}
+.s-mapvodie2 .s-mapv2 {
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.s-maptext2 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 450px;
+    height: 75px;
+    text-align: center;
+   background: rgba(0, 0, 0, .5);
+   padding: 10px 117px;
+   transform: translateY(-10px);
+   overflow: hidden;
+}
+.s-maptext2 span {
+    
+    font-weight: 600;
+    display: block;
+    font-size: 16px;
+}
+.s-maptext2 p {
+    margin: 0 auto;
+    font-size: 12px;
+}
+/* 雷达型动画效果公共样式 */
+.s-public1 {
+    position: absolute;
+    top: 0;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, .6); 
+     animation: maopao1 1.5s linear infinite ;
+}
+.s-public2 {
+    position: absolute;
+    top: 0;
+    width: 25px;
+    height: 25px;
+ 
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, .6);
+    animation: maopao2 1.5s  linear  infinite ;
+}
+.s-public3 {
+    position: absolute;
+    /* left: 43%; */
+    top: 0;
+  
+    width: 25px;
+    height: 25px;
+
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, .6); 
+    animation: maopao3 1.5s  linear  infinite;
+}
+
+@keyframes maopao1 {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+@keyframes maopao2 {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+ 100% {
+     transform: scale(3);
+     opacity: 0;
+ }
+}
+@keyframes maopao3 {
+    0% {
+        opacity: 0;
+    }
+50% {
+        opacity: 0.5;
+    }
+ 100% {
+     transform: scale(4);
+     opacity: 0;
+ }
+}

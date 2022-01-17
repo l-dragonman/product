@@ -1,0 +1,270 @@
+a {
+    text-decoration: none;
+}
+// 以上是公共样式
+// 版心
+.w {
+    width: 1903px;
+    margin: 0 auto;
+}
+// 顶部logo strat
+.z-header {
+    height: 70px;
+    background-color: #2a2a2a;
+    .logo {
+        position: relative;
+        margin: 0 auto;
+        width: 1300px;
+        a {
+            background: url(../z-images/logo1.png) no-repeat;
+            width: 180px;
+            height: 48px;
+            position: absolute;
+            top: 10px;
+            left: 180px;
+            cursor: pointer;
+
+            // logo优化
+            color: transparent;
+            user-select: none;      // 不被用户选中
+        }
+    }
+}
+// 顶部logo end
+
+// 内容 stra
+// 下载区域 start
+.load {
+    overflow: hidden;
+    .w {
+        position: relative;
+        height: 990px;
+        background: url(../z-upload/bg-bomb.jpg) no-repeat;
+        .action {
+            animation: solider 0.6s 1 forwards;
+        }
+        .solider {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-top: -547px;
+            margin-left: -636px;
+            transform-origin: center bottom;
+            animation: solider 0.6s 1 forwards;
+        }
+        .t-logo {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-top: -355px;
+            margin-left: -75px;
+            transform-origin: right center;
+            animation: solider 0.6s 1 forwards;
+        }
+        .qr {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-top: -97px;
+            margin-left: -66px;
+            width: 248px;
+            height: 248px;
+            transform-origin: right center;
+            animation: qr 0.6s 1 forwards;
+        }
+        .android {
+            margin-top: -90px;
+            background: url(../z-images/bj-android.png) no-repeat;
+            transform-origin: right center;
+            animation: qr 0.6s 1 forwards;
+        }
+        .ios {
+            margin-top: 35px;
+            background: url(../z-images/bj-ios.png) no-repeat;
+            transform-origin: right center;
+            animation: qr 0.6s 1 forwards;
+        }
+        .download {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: 195px;
+            width: 318px;
+            height: 112px;
+            cursor: pointer;
+        }
+    }
+}
+@keyframes solider {
+    0%{
+        transform: scale(0.87);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+@keyframes qr {
+    0%{
+        transform: translateX(90px) scale(0.9);
+    }
+    90%{
+        transform: translateX(3px) scale(1);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+// 下载区域 end
+// 福利区域 start
+.weal {
+    .w {
+        position: relative;
+        height: 885px;
+        margin-top: -68px;
+        background: url(../z-upload/bg-black.png) no-repeat;
+        .s-weal {
+            position: absolute;
+            left: 50%;
+            top: 0;
+            margin-left: -505.5px;
+        }
+        .app-pic {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: -275px;
+            margin-left: -542px;
+            transform-origin: right center;
+            // animation:app 0.7s 1 forwards;
+
+        }
+    }
+}
+@keyframes weal {
+    0%{
+        transform:scale(0.9);
+    }
+    100%{
+        transform: translateX(200px) scale(1);
+    }
+}
+@keyframes app {
+    0%{
+        transform: scale(0.9);
+    }
+    100%{
+        transform: translateX(-100px) scale(1);
+    }
+}
+// 福利区域 end
+// 游戏辅助区域 start
+.assist {
+    position: relative;
+    height: 1165px;
+    margin-top: -255px;
+    .w {
+        height: 1165px;
+        background: url(../z-upload/bg-women.png) no-repeat;
+        position: absolute;
+        left: 50%;
+        top: 0;
+        margin-left: -960px;
+        .game {
+            position: absolute;
+            left: 50%;
+            margin-top: 262px;
+            margin-left: -483px;
+        }
+        .list {
+            display: flex;
+            width: 54.164667%;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            // margin: 440px auto 0;
+            margin: 600px auto 0;
+        }
+        li{
+            img {
+                // width: 465px;
+                opacity: 0;
+                transform-origin: center bottom;
+            }
+        } 
+        // 蹦蹦车区域 start
+        .bb {
+            position: absolute;
+            bottom: -75px;
+            left: 160px;
+        }
+        // 蹦蹦车区域 end
+    }
+}
+@keyframes lis {
+    100%{
+        opacity: 1;
+        transform: translateY(-160px);
+    }
+}
+// 游戏辅助区域 end
+// 内容 end
+
+// 尾部 start
+.z-footer {
+    height: 150px;
+    background-color: #131313;
+    .w-footer {
+        width: 1240px;
+        margin: 0 auto;
+        padding: 50px 0 0;
+        p {
+            text-align: center;
+            line-height: 24px;
+            font-size: 12px;
+            margin: 0;
+            a {
+                color: #6e6e6e;
+                i {
+                    padding: 0 4px;
+                }
+            }
+        }
+    }
+}
+// 尾部 end
+
+// 广告区域 start
+.z-adv {
+    position: fixed;
+    right: 100px;
+    top: 150px;
+    width: 160px;
+    height: 340px;
+    display: block;
+    background: url(../z-upload/jion.png) no-repeat;
+    cursor: pointer;
+    .a-jion {
+        width: 140px;
+        height: 45px;
+        position: absolute;
+        bottom: 62px;
+        left: 50%;
+        margin-left: -70px;
+        // background-color: palevioletred;
+        color: transparent;
+        user-select: none;
+    }
+    .close {
+        position: absolute;
+        right: -6px;
+        top: -6px;
+        width: 20px;
+        height: 20px;
+        background: url(../z-images/close.png) no-repeat;
+        display: block;
+        cursor: pointer;
+    }
+}
+// 广告区域 end
+
+// 尾部 start
+// 尾部 end

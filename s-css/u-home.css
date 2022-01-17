@@ -1,0 +1,576 @@
+video {
+    object-fit: fill;
+    width: 100%;
+    height: 102%;
+    margin-top: -10px;
+}
+
+.u-scroll_tips {
+    position: fixed;
+    left: 50%;
+    bottom: 20px;
+    width: 24px;
+    height: 78px;
+    background: url(../s-images/sprite.png) -86px 0;
+    z-index: 999;
+}
+
+/* 第三副效果图开始 */
+.section .u-ft {
+    position: relative;
+}
+
+.section .u-ft-1 {
+    position: absolute;
+    top: 45%;
+    left: 30%;
+    width: 400px;
+    height: 120px;
+    background: url(../s-images/sprite.png) no-repeat -788px -215px;
+    z-index: 1;
+}
+
+.section .u-ft-2 {
+    position: absolute;
+    top: 58%;
+    left: 33%;
+    width: 550px;
+    height: 100px;
+    background: url(../s-images/sprite.png) no-repeat -788px -330px;
+    z-index: 1;
+}
+
+.section .u-ft-3 {
+    position: absolute;
+    top: 70%;
+    left: 40%;
+    font-size: 12px;
+    color: white;
+    z-index: 1;
+}
+
+.section .u-halor {
+    position: absolute;
+    top: 74%;
+    left: 55%;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 20px;
+    color: #e69800;
+    font-size: 16px;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.u-public1 {
+    position: absolute;
+    top: 0;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, .6);
+    animation: maopao1 1.5s linear infinite;
+}
+
+.u-public2 {
+    position: absolute;
+    top: 0;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, .6);
+    animation: maopao2 1.5s linear infinite;
+}
+
+.u-public3 {
+    position: absolute;
+    top: 0;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, .6);
+    animation: maopao3 1.5s linear infinite;
+}
+
+@keyframes maopao1 {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+@keyframes maopao2 {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: scale(3);
+        opacity: 0;
+    }
+}
+
+@keyframes maopao3 {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: scale(4);
+        opacity: 0;
+    }
+}
+
+.u-halor span {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #e9e9e8;
+    display: block;
+    text-align: center;
+    line-height: 25px;
+    margin-left: 25px;
+    color: #e69800;
+    font-size: 16px;
+    z-index: 5;
+    font-weight: bold
+}
+
+/* 第三幅最上一层基本样式已经完成 */
+
+/* 狙击枪盒子 */
+.section .u-sniper {
+    opacity: 0;
+    position: absolute;
+    top: 10%;
+    left: 53%;
+    width: 600px;
+    height: 600px;
+    transition: all 3s;
+}
+
+.u-sniper-top {
+    position: relative;
+    width: 100%;
+    height: 50%;
+    background-color: transparent;
+
+}
+
+.u-sniper-top .u-gun1 {
+    position: absolute;
+    top: 37%;
+    left: 5%;
+    width: 580px;
+    height: 100px;
+    background: url(../u-upload/weapon.png) no-repeat 0px 0px;
+    /* transform: scale(0.8); */
+}
+
+
+.part1,
+.part2,
+.part3,
+.part4,
+.part5 {
+    width: 48px;
+    height: 48px;
+    background-color: rgba(45, 27, 61, 0.8);
+}
+
+.part1 {
+    position: absolute;
+    top: 28%;
+    left: 55%;
+    background: url(../u-upload/equip.png) no-repeat -7px -820px;
+
+}
+
+.part2 {
+    position: absolute;
+    top: 70%;
+    left: 15%;
+    background: url(../u-upload/equip.png) no-repeat -7px -940px;
+
+}
+
+.part3 {
+    position: absolute;
+    top: 70%;
+    left: 30%;
+    background: url(../u-upload/equip.png) no-repeat -7px -1060px;
+
+}
+
+.part4 {
+    position: absolute;
+    top: 70%;
+    left: 55%;
+    background: url(../u-upload/equip.png) no-repeat -7px -1000px;
+
+}
+
+.part5 {
+    position: absolute;
+    top: 70%;
+    left: 80%;
+    background: url(../u-upload/equip.png) no-repeat -70px -1120px;
+
+}
+
+
+/* 步枪盒子 */
+
+.u-sniper-bottom {
+    position: relative;
+    width: 100%;
+    height: 50%;
+    background-color: transparent;
+}
+
+.u-sniper-bottom .u-gun2 {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    width: 590px;
+    height: 220px;
+    background: url(../u-upload/weapon.png) no-repeat 0px -120px;
+    /* transform: scale(0.8); */
+
+}
+
+.rifle1,
+.rifle2,
+.rifle3,
+.rifle4,
+.rifle5 {
+    width: 48px;
+    height: 48px;
+    background-color: rgba(45, 27, 61, 0.8);
+}
+
+.rifle1 {
+    position: absolute;
+    top: 5%;
+    left: 55%;
+    background: url(../u-upload/equip.png) no-repeat -7px -820px;
+
+}
+
+.rifle2 {
+    position: absolute;
+    top: 75%;
+    left: 15%;
+    background: url(../u-upload/equip.png) no-repeat -7px -940px;
+}
+
+.rifle3 {
+    position: absolute;
+    top: 75%;
+    left: 30%;
+    background: url(../u-upload/equip.png) no-repeat -7px -1060px;
+
+}
+
+.rifle4 {
+    position: absolute;
+    top: 75%;
+    left: 55%;
+    background: url(../u-upload/equip.png) no-repeat -7px -1000px;
+
+}
+
+.rifle5 {
+    position: absolute;
+    top: 75%;
+    left: 80%;
+    background: url(../u-upload/equip.png) no-repeat -70px -1120px;
+
+}
+
+/* 天气地形样式 */
+.u-tupian {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-top: -10px;
+    z-index: 1;
+}
+
+.u-climate {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.u-shade {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 101%;
+    background-color: rgba(12, 12, 12, 1);
+    opacity: 1;
+
+}
+
+.u-weather {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 102%;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.u-weather li {
+    flex: 1;
+    overflow: hidden;
+    transition: all 1s;
+}
+
+.u-weather1 img,
+.u-weather2 img,
+.u-weather3 img {
+    width: 130%;
+    height: 100%;
+}
+
+.u-headline {
+    position: absolute;
+    top: 20%;
+    left: 26%;
+    width: 800px;
+    height: 89px;
+    background: url(../s-images/sprite.png) no-repeat 0px -418px;
+    /* transform: scale(.8); */
+    z-index: 3;
+}
+
+.word1,
+.word2,
+.word3,
+.word4,
+.word5,
+.word6,
+.word7,
+.word8 {
+    transition: all 1s;
+}
+
+.word1 {
+    position: absolute;
+    top: 45%;
+    left: 10%;
+    width: 100px;
+    height: 75px;
+    background: url(../s-images/sprite.png) no-repeat -332px -679px;
+    /* transform: scale(.8); */
+    transition: all 2.5s;
+    z-index: 3;
+}
+
+.word2 {
+    position: absolute;
+    top: 45%;
+    left: 47%;
+    width: 100px;
+    height: 75px;
+    background: url(../s-images/sprite.png) no-repeat -233px -679px;
+    /* transform: scale(.8); */
+    z-index: 3;
+}
+
+.word3 {
+    position: absolute;
+    top: 45%;
+    left: 80%;
+    width: 100px;
+    height: 75px;
+    background: url(../s-images/sprite.png) no-repeat -432px -679px;
+    /* transform: scale(.8); */
+    z-index: 3;
+}
+
+.u-cloud {
+    position: absolute;
+    top: 78%;
+    left: 35%;
+    width: 113px;
+    height: 87px;
+    background: url(../s-images/sprite.png) no-repeat 0px -762px;
+    /* transform: scale(.8); */
+    z-index: 3;
+}
+
+.u-wenzi1,
+.u-tianqi {
+    color: #e69800;
+}
+
+.u-xian1 {
+    background-color: #e69800;
+}
+
+.u-hill {
+    position: absolute;
+    top: 78%;
+    left: 57%;
+    width: 126px;
+    height: 87px;
+    background: url(../s-images/sprite.png) no-repeat -111px -679px;
+    /* transform: scale(.8); */
+    z-index: 3;
+}
+
+.u-cloud-ft {
+    position: absolute;
+    top: 89%;
+    left: 33%;
+    width: 180px;
+    height: 150px;
+    text-align: center;
+    z-index: 3;
+}
+
+.u-cloud-ft span,
+.u-hill-ft span {
+    display: block;
+    margin-top: 8px;
+}
+
+.u-cloud-ft span:first-child,
+.u-hill-ft span:first-child {
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.u-cloud-ft span:nth-child(2),
+.u-hill-ft span:nth-child(2) {
+    margin-left: 80px;
+    width: 20px;
+    height: 1px;
+}
+
+.u-cloud-ft span:last-child,
+.u-hill-ft span:last-child {
+    font-size: 8px;
+    font-weight: 200;
+}
+
+.u-hill-ft {
+    position: absolute;
+    top: 90%;
+    left: 55%;
+    width: 180px;
+    height: 150px;
+    text-align: center;
+    z-index: 3;
+}
+
+/* 山形背景 */
+.u-terrain {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.u-chevron {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 102%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.u-chevron li {
+    flex: 1;
+    overflow: hidden;
+    transition: all 1s;
+}
+
+.u-chevron li img {
+    width: 120%;
+    height: 100%;
+}
+
+.u-chevron .word4 {
+    position: absolute;
+    top: 45%;
+    left: 7%;
+    width: 100px;
+    height: 76px;
+    background: url(../s-images/sprite.png) no-repeat -232px -753px;
+    z-index: 3;
+}
+
+.u-chevron .word5 {
+    position: absolute;
+    top: 45%;
+    left: 27%;
+    width: 100px;
+    height: 76px;
+    background: url(../s-images/sprite.png) no-repeat -333px -753px;
+    z-index: 3;
+}
+
+.u-chevron .word6 {
+    position: absolute;
+    top: 45%;
+    left: 47%;
+    width: 100px;
+    height: 76px;
+    background: url(../s-images/sprite.png) no-repeat -433px -753px;
+    z-index: 3;
+}
+
+.u-chevron .word7 {
+    position: absolute;
+    top: 45%;
+    left: 67%;
+    width: 100px;
+    height: 76px;
+    background: url(../s-images/sprite.png) no-repeat -533px -753px;
+
+    z-index: 3;
+}
+
+.u-chevron .word8 {
+    position: absolute;
+    top: 45%;
+    left: 87%;
+    width: 100px;
+    height: 76px;
+    background: url(../s-images/sprite.png) no-repeat -633px -753px;
+    z-index: 3;
+}
+
+/* 战地车 */
+.u-car {
+    margin-top: 18px;
+    z-index: 2;
+}

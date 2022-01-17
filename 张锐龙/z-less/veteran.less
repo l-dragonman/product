@@ -1,0 +1,733 @@
+.w {
+    width: 1903px;
+    margin: 0 auto;
+}
+.xiao_w {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+a {
+    text-decoration: none;
+}
+// 以上为公共样式
+body {
+    // padding-top: 42px;
+    background-color: #261f27;
+}
+.fixed {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+}
+// 视频遮罩
+.overplay {
+    background-color: rgb(230, 245, 255);
+    border-top: 1px solid rgb(230, 245, 255);
+    position: absolute;
+    height: 3636px;
+    z-index: 9998;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    opacity: 0.7;
+    display: block;
+}
+// 视频
+.video_box {
+    display: none;
+    visibility: visible;
+    position: fixed;
+    z-index: 9999;
+    left: 50%;
+    top: 50%;
+    margin-top: -235px;
+    margin-left: -410px;
+    background-color: #000;
+    border: 10px solid #c4ad75;
+    height: 450px;
+    width: 800px;
+    .video_div {
+        width: 800px;
+        height: 450px;
+        // .shiping {
+            video {
+                width: 780px;
+                height: 430px;
+                object-fit:fill
+            }
+        // }
+        .video_close {
+            color: #c4ad75;
+            display: block;
+            font: bold 70px/60px simsun;
+            height: 60px;
+            position: absolute;
+            right: -70px;
+            top: -17px;
+            width: 60px;
+        }
+    }
+}
+// 视频 end
+
+// TOP
+.atop {
+    width: 61px;
+    height: 61px;
+    position: fixed !important;
+    position: absolute;
+    right: 30px;
+    z-index: 10;
+    bottom: 30px !important;
+    bottom: auto;
+    top: auto !important;
+    top: 400px;
+    color: transparent;
+    user-select: none;
+    background: url(../z-images/gotop.png) no-repeat;
+}
+// TOP
+// 导航栏 start
+.z-nav {
+    position: relative;
+    .nav-f {
+        width: 100%;
+        height: 100px;
+        background-position: 50% 0;
+        position: absolute;
+        top:0;
+        z-index: 3;
+        background: url(../z-images/nav_logo.png) no-repeat 50% 0;
+        .nav {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+            .logo{
+                width: 142px;
+                height: 69px;
+                background-position: 0 -132px;
+                display: block;
+                color: transparent;
+                user-select: none;
+                margin-top: 4px;
+                float: left;
+                
+            }
+            ul {
+                float: left;
+                padding: 18px 0 0 40px;
+                    li {
+                        position: relative;
+                        float: left;
+                        margin: 0 24px;
+                        &:hover a {
+                            color: #d98500;
+                        }
+                        i {
+                            display: block;
+                            width: 4px;
+                            height: 18px;
+                            background: #d98500;
+                            position: absolute;
+                            left: 0;
+                            top: 5px;
+                            font-size: 0;
+                            overflow: hidden;
+                        }
+                        a {
+                            color: #ccc;
+                            font-weight: 700;
+                            font-size: 14px;
+                            b {
+                                display: block;
+                                font-size: 18px;
+                                font-weight: 700;
+                                padding-left: 12px;
+                            }
+                            span {
+                                padding-left: 12px;
+                            }
+                        }
+                    }
+            }
+            .denglu {
+                position: absolute;
+                top: 30px;
+                // z-index: 100;
+                color: #fff;
+                text-align: right;
+                right: 50%;
+                margin-right: -350px;
+                p {
+                    color: #fff;
+                }
+                a {
+                    color: #fff;
+                }
+            }
+            .enter{
+                position: absolute;
+                top: 19px;
+                right: 0;
+                display: block;
+                width: 154px;
+                height: 52px;
+                font-size: 18px;
+                text-align: center;
+                line-height: 46px;
+                color: #333;
+                text-shadow: 1px 1px 1px #b27601;
+                background: url(../z-upload/bangding.png) no-repeat;
+            }
+        }
+    }
+}
+// 导航栏 end
+// 欢迎老兵 start
+.welcome {
+    .w {
+        background: url(../z-upload/bg-top1.jpg) center top no-repeat;
+        height: 710px;
+        min-width: 1200px;
+        margin-top: 76px;
+        z-index: -1;
+    }
+}
+// 欢迎老兵 end
+
+// 主体内容 start
+.container {
+    .w {
+        // 老兵登记 start
+        .check {
+            height: 755px;
+            min-width: 1200px;
+            background: url(../z-upload/bg-top2.jpg) center top no-repeat;
+            .xiao_w {
+                position: relative;
+                .text {
+                    position: absolute;
+                    top: 175px;
+                    left: 15px;
+                    font-size: 16px;
+                    color: #fff;
+                    width: 660px;
+                    line-height: 26px;
+                    .qian {
+                        font-size: 21px;
+                        font-weight: 700;
+                        line-height: 21px;
+                        padding-bottom: 23px;
+                    }
+                    .duanluo {
+                        // clear: both;
+                        display: block;
+                        overflow: hidden;
+                        margin-bottom: 15px;
+                        .num1 {
+                            float: left;
+                        }
+                        .p_1 {
+                            width: 487px;
+                            padding-left: 5px;
+                            .kefu{
+                                display: block;
+                                width: 164px;
+                                height: 46px;
+                                margin-top: 15px;
+                                color: transparent;
+                                user-select: none;
+                                background: url(../z-images/kf.png) no-repeat;
+                            }
+                        }
+                    }
+                }
+                .dvideo {
+                    position: absolute;
+                    top: 185px;
+                    left: 560px;
+                    width: 636px;
+                    height: 356px;
+                    border: 1px solid #797478;
+                    .avideo {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        display: block;
+                        width: 636px;
+                        height: 356px;
+                        background: url(../z-upload/video-auto.jpg) no-repeat;
+                        b {
+                            position: absolute;
+                            width: 221px;
+                            height: 52px;
+                            left: 50%;
+                            margin-left: -110px;
+                            top: 156px;
+                            background: url(../z-upload/bofang.png) no-repeat;
+                        }
+                    }
+                }
+            }
+        }
+        // 老兵登记 end
+        // 绑定方法 start
+        .bind {
+            height: 833px;
+            min-width: 1200px;
+            background: url(../z-upload/bg-top3.jpg) center top no-repeat;
+            .milestone {
+                width: 1200px;
+                margin: 0 auto;
+                height: 280px;
+                overflow: hidden;
+                position: relative;
+                top: -156px;
+                h2 {
+                    font-size: 40px;
+                    font-weight: 700;
+                    color: #fff;
+                    text-align: center;
+                }
+                .s-num {
+                    display: block;
+                    text-align: center;
+                    color: #d98500;
+                    font-size: 36px;
+                    font-weight: 700;
+                }
+                .yellow-bg {
+                    width: 1100px;
+                    height: 29px;
+                    background-position: -29px 0;
+                    margin: 10px auto 0;
+                    background: url(../z-images/yellow.png) no-repeat -29px -46px;
+                }
+                .oldsolider {
+                    position: absolute;
+                    width: 242px;
+                    height: 100px;
+                    top: 181px;
+                    left: 483px;
+                    // text-indent: -9999px;
+                    color: transparent;
+                    user-select: none;
+                }
+            }
+            .xiao_w {
+                position: relative;
+                .way {
+                    
+                    position: relative;
+                    top: -134px;
+                    height: 750px;
+                    background: url(../z-upload/way-bg.png) no-repeat;
+                    .way-top {
+                        position: relative;
+                        height: 90px;
+                        text-align: center;
+                        width: 1140px;
+                        margin: 0 auto;
+                        // border-bottom: 1px dashed #000;
+                        h3 {
+                            margin-top: 20px;
+                            height: 60px;
+                            line-height: 60px;
+                            font-weight: 700;
+                            font-size: 40px;
+                            color: #121212;
+                        }
+                        .click-denglu {
+                            font-size: 20px;
+                            color: #d98500;
+                            text-align: center;
+                            width: 108px;
+                            height: 56px;
+                            line-height: 56px;
+                            position: absolute;
+                            top: 10px;
+                            right: 0px;
+                            text-decoration: underline;
+                            text-align: right;
+                        }
+                    }
+                    .way-qq {
+                        // display: none;
+                        position: absolute;
+                        top: 115px;
+                        left: 77px;
+                        width: 481px;
+                        padding-top: 26px;
+                        .qqtxt1 {
+                            font-size: 38px;
+                            line-height: 38px;
+                            padding-bottom: 16px;
+                            margin-bottom: 16px;
+                            color: #121212;
+                            font-weight: 700;
+                        }
+                        .qqtxt2{
+                            font-size: 16px;
+                            color: #e72d1f;
+                            padding-bottom: 50px;
+                        }
+                        .qqtxt3 {
+                            float: left;
+                            color: #323232;
+                            font-size: 14px;
+                            background: #f1f1f1;
+                            padding: 10px;
+                            border-radius: 3px;
+                            span {
+                                // width: 18px;
+                                // height: 30px;
+                                float: left;
+                                margin-right: 5px;
+                                margin-top: 2px;
+                                // display: none;
+                                // background: url(../z-images/tanhao.png) no-repeat;
+                            }
+                        }
+                    }
+                    .way-steam {
+                        // display: none;
+                        position: absolute;
+                        top: 115px;
+                        left: 594px;
+                        width: 459px;
+                        border-left: 1px dashed #000;
+                        padding: 26px 0 0 120px;
+                        height: 300px;
+                        .steam1 {
+                            font-size: 38px;
+                            line-height: 38px;
+                            padding-bottom: 16px;
+                            margin-bottom: 16px;
+                            color: #121212;
+                            font-weight: 700;
+                        }
+                        .style-steam {
+                            font-size: 18px;
+                            color: #333333;
+                            padding-bottom: 14px;
+                            margin-bottom: 14px;
+                            overflow: hidden;
+                        }
+                        .start-bind {
+                            font-size: 20px;
+                            color: #ffffff;
+                            text-align: center;
+                            width: 158px;
+                            height: 60px;
+                            line-height: 44px;
+                            position: absolute;
+                            top: 20px;
+                            right: -120px;
+                            background: url(../z-upload/bangding.png) no-repeat;
+                        }
+                        .s1 {
+                            color: #000;
+                            display: block;
+                            float: left;
+                            width: 105px;
+                            text-align: left;
+                        }
+                        .s2 {
+                            color: #666;
+                            font-weight: normal;
+                            float: left;
+                        }
+                    }
+                }
+                .changeway {
+                    // display: none;
+                    width: 1200px;
+                    height: 500px;
+                    position: absolute;
+                    top: -20px;
+                    left: 0;
+                    z-index: 2;
+                    background: #fff;
+                    .state {
+                        position: absolute;
+                        top: -92px;
+                        right: 140px;
+                        font-size: 20px;
+                        color: #d98500;
+                        text-decoration: underline;
+                    }
+                    .qiehuan1{
+                        
+                        .bangdingqi {
+                            position: absolute;
+                            top: 124px;
+                            left: 88px;
+                            width: 440px;
+                            height: 101px;
+                            color: transparent;
+                            user-select: none;
+                        }
+                        .onevideo {
+                            left: 482px;
+                        }
+                        .twovideo {
+                            left: 1092px;
+                        }
+                        .video_link {
+                            display: block;
+                            position: absolute;
+                            top: 51px;
+                            font-size: 14px;
+                            color: #d98500;
+                            text-decoration: underline;
+                        }
+                        .buzhou_link {
+                            height: 60px;
+                            line-height: 60px;
+                            top: 200px;
+                            left: 1039px;
+                        }
+                        .buzhou_div {
+                            display: block;
+                            line-height: 60px;
+                            position: absolute;
+                            top: 250px;
+                            left: 676px;
+                            text-indent: -9999px;
+                            width: 461px;
+                            height: 210px;
+                        }
+                    }
+                    .qiehuan2 {
+                        display: none;
+                    }
+                }
+                .go {
+                    display: block;
+                    width: 480px;
+                    height: 110px;
+                    position: absolute;
+                    top: 350px;
+                    left: 368px;
+                    color: #fff;
+                    font-size: 36px;
+                    text-align: center;
+                    line-height: 94px;
+                    background: url(../z-upload/qianwang.png) no-repeat;
+                }
+            }
+        }
+        // 绑定方法 end
+        // 常见问题 start
+        .question {
+            height: 1063px;
+            min-width: 1200px;
+            background: url(../z-upload/bg-top4.jpg) center top no-repeat;
+            .xiao_w{
+                ul {
+                    clear: both;
+                    display: block;
+                    overflow: hidden;
+                    padding: 184px 0 0 88px;
+                    li {
+                        clear: both;
+                        display: block;
+                        overflow: hidden;
+                        margin-bottom: 30px;
+                        a {
+                            color: #ec660c;
+                            text-decoration: underline;
+                        }
+                        .black_txt {
+                            width: auto;
+                            height: 30px;
+                            line-height: 30px;
+                            font-size: 18px;
+                            color: #fff;
+                            padding-left: 10px;
+                            float: left;
+                            padding-right: 10px;
+                            background: url(../z-upload/txt_bg.png) no-repeat;
+                        }
+                        .white_txt {
+                            clear: both;
+                            font-size: 18px;
+                            color: #000;
+                            padding-left: 10px;
+                        }
+                    }
+                }
+            }
+        }
+        // 常见问题 end
+    }
+}
+// 主体内容 end
+
+// QQ登录弹出框 start
+.z-login {
+    margin: 0 auto;
+    border: 2px solid #eee;
+    position: fixed;
+    z-index: 9999;
+    left: 50%;
+    top: 50%;
+    margin-left: -183px;
+    margin-top: -182px;
+    width: 366px;
+    height: 364px;
+    background-color: #fff;
+    .lo-close {
+        height: 50px;
+        width: 50px;
+        position: absolute;
+        top: -8px;
+        right: -10px;
+        z-index: 1000;
+        text-align: center;
+        font-size: 25px;
+        cursor: pointer;
+    }
+    .lo-login1 {
+        display: block;
+        // display: none;
+        height: 100%;
+        top: 50%;
+        position: absolute;
+        margin: -150px auto 0;
+        width: 100%;
+        .lo-title {
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 16px;
+            text-align: center;
+        }
+        .lo-tips {
+            color: #666;
+            font-size: 16px;
+            text-align: center;
+            position: relative;
+            margin-bottom: 36px;
+            zoom: 1;
+            .link-tips {
+                color: #3481cf;
+                &:hover {
+                    text-decoration: underline;
+                    color: #3481cf;
+                }
+            }
+        }
+        .lo-qr {
+            height: 50%;
+            text-align: center;
+            position: relative;
+            img {
+                height: 130px;
+                width: 130px;
+                border: 1px solid #D3D3D3;
+                z-index: 1000;
+            }
+        }
+        .lo-bottom {
+            height: 16px;
+            margin-bottom: 8px;
+            width: 100%;
+            position: absolute;
+            bottom: -20px;
+            right: 10px;
+            text-align: right;
+            font-size: 12px;
+            a {
+                color: #666;
+                &:hover {
+                    text-decoration: underline;
+                    color: #666;
+                }
+            }
+            span {
+                color: #bfbfbf;
+                margin: 0 5px;
+            }
+        }
+    }
+    .lo-login2 {
+        display: none;
+        // display: block;
+        height: 100%;
+        top: 50%;
+        position: absolute;
+        margin: -150px auto 0;
+        width: 100%;
+        .lo-title2 {
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 16px;
+            text-align: center;
+        }
+        .lo-tips2 {
+            color: #666;
+            font-size: 16px;
+            text-align: center;
+            position: relative;
+            margin-bottom: 36px;
+            zoom: 1;
+            .link-tips2 {
+                color: #3481cf;
+                &:hover {
+                    text-decoration: underline;
+                    color: #3481cf;
+                }
+            }
+        }
+        input {
+            border: solid 1px #d6d6d6;
+            width: 258px;
+            height: 40px;
+            border-radius: 3px;
+            margin-bottom: 15px;
+            padding: 10px 0 10px 10px;
+            outline: none;
+            &:focus {
+                border-color: #a2d2ff;
+            }
+        }
+        .lo-user {
+            margin-top: 40px; 
+        }
+        .sub {
+            padding-top: 0;
+            color: #fff;
+            height: 40px;
+            line-height: 35px;
+            font-size: 17px;
+            background-color: #86ce2f;
+            &:focus {
+                border-color: transparent;
+            }
+        }
+        .lo-bottom2 {
+            height: 16px;
+            margin-bottom: 8px;
+            width: 100%;
+            position: absolute;
+            bottom: -50px;
+            right: 10px;
+            text-align: right;
+            font-size: 12px;
+            a {
+                color: #666;
+                &:hover {
+                    text-decoration: underline;
+                    color: #666;
+                }
+            }
+            span {
+                color: #bfbfbf;
+                margin: 0 5px;
+            }
+            
+        }
+    }
+}
+// QQ登录弹出框 end
